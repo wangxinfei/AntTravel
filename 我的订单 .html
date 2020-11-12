@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<!-- <link rel="stylesheet" type="text/css" href="css.css" /> -->
+		<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的订单</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 微软雅黑;
+			}
+
+			header {
+				height: 60px;
+				line-height: 60px;
+				width: 100%;
+				color: #fff;
+				font-family: 黑体;
+				font-weight: 200;
+				/* font-size: 20px; */
+				margin-left: 20px;
+				/* 背景色渐变 */
+				background: linear-gradient(to bottom right, #F56739, #FB9749);
+			}
+
+			#content {
+				background: linear-gradient(to bottom right, #f5f454, #fbd1b7);
+			}
+
+			.menu {
+				display: block;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				height: 70px;
+				color: #474747;
+				padding-top: 10px;
+				border-top: 1px solid #eee;
+				background-color: #fff;
+				margin-left: 20px;
+			}
+
+			.subMenu {
+				width: 33%;
+				float: left;
+				cursor: pointer;
+			}
+
+			.menu_name {
+				height: 30px;
+				width: 100%;
+				line-height: 30px;
+			}
+
+			img.menu_img {
+				height: 24px;
+				width: 24px;
+			}
+
+			img {
+				vertical-align: middle;
+				border: 0;
+			}
+
+			.active {
+				color: #FFA129;
+			}
+
+			.text-center {
+				text-align: center
+			}
+		</style>
+		<script src="js/jquery-1.11.2.min.js"></script>
+
+		<style type="text/css">
+			html {
+				font-size: 100px;
+			}
+
+			body,
+			a,
+			ul,
+			li {
+				padding: 10;
+				margin: 10;
+				list-style: none;
+				text-decoration: none;
+			}
+
+			body {
+				background: rgb(240, 240, 240);
+				font-family: .PingFangSC-Regular;
+			}
+
+			div {
+				box-sizing: border-box;
+			}
+
+			.head {
+				font-size: 19px;
+				height: 0.44rem;
+				background: #26A69A;
+				color: white;
+				text-align: center;
+				line-height: 0.44rem;
+			}
+
+			.head>a {
+				color: white;
+				float: left;
+				margin-left: 0.12rem;
+			}
+
+			.nav {
+				height: 0.44rem;
+				background: white;
+
+				line-height: 0.44rem;
+
+
+			}
+
+			.nav ul a {
+				margin-left: 20px;
+			}
+
+			.nav>ul>li {
+				float: left;
+				margin: 0px 0.15rem;
+				margin-left: 20px;
+			}
+
+			.content {
+				margin-top: 50px;
+
+			}
+
+			.cell1 {
+				height: 1.59rem;
+				background: white;
+				font-size: 0.12rem;
+				margin-top: 15px;
+			}
+
+			.title {
+				height: 0.22rem;
+				border-bottom: 1px solid #D8D8D8;
+				padding-left: 0.12rem;
+				padding-right: 0.12rem;
+				margin-top: 2px;
+			}
+
+			.title>span {
+				float: right;
+				font-size: 10px;
+				color: #A4A3A3;
+				margin-top: 3px;
+			}
+
+			.cell {
+				height: 0.96rem;
+				background: white;
+				border-bottom: 1px solid #D8D8D8;
+				padding: 0.12rem 0;
+			}
+
+			.cell>.img {
+				width: 1.27rem;
+				height: 0.72rem;
+				float: left;
+				margin-left: 0.12rem;
+
+			}
+
+			.cell>.text {
+				width: 2.12rem;
+				margin-right: 0.12rem;
+				float: right
+			}
+
+			.cell>.text>span {
+				display: block;
+			}
+
+			.cell .intro {
+				font-size: 0.1rem;
+				color: #A4A3A3;
+			}
+
+			.cell .spay {
+				font-size: 0.09rem;
+				color: #A4A3A3;
+			}
+
+			.cell .pay {
+				color: #26A69A;
+				font-size: 0.1rem;
+			}
+
+			.footer {
+				height: 0.32rem;
+				padding: 0.1rem;
+				text-align: center;
+			}
+
+			.footer>.btn {
+				float: right;
+			}
+
+			.option {
+				width: 0.65rem;
+				border: 1px solid #26A69A;
+				border-radius: 2px;
+				float: left;
+				margin-left: 0.07rem;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="head" style="width: 100%;">
+					<a href="home.html">
+						< <div id="daohang" style="width: 100%;">
+					</a> 我的订单 <div class="nav" style="height: 45px; width: 100%;">
+						<ul>
+							<a href="#" style="font-size: 15px;" style="width: 30px;" <li style="float: left;" <!-- style="width: 20px;" -->全部
+								</li>
+							</a>
+							<a href="#" style="font-size: 15px;" style="width: 30px;" <li style="float: left;">已付款 </li>
+							</a>
+							<a href="#" style="font-size: 15px;" <li style="float: left;">未付款 </li>
+							</a>
+							<a href="#" style="font-size: 15px;" <li style="float: left;">待收货 </li>
+							</a>
+							<a href="#" style="font-size: 15px;" <li style="float: left;">待评价 </li>
+							</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="cell1">
+					<div class="title">
+						麗枫酒店(北京南站木樨园店)<span>交易成功</span>
+					</div>
+					<div class="cell">
+						<div class="text">
+							<div class="brand">麗枫酒店(北京南站木樨园店)</div>
+							<span class="intro">高级大床房（无窗）</span>
+							<span class="spay">应付账款￥433.090</span>
+							<span class="pay">实际付款：￥433.000</span>
+
+						</div>
+						<div class="img"><img src="images/133.jpg" width="100px" /></div>
+
+					</div>
+					<div class="footer">
+						<div class="btn">
+							<a href="#" style="font-size: 13px;">
+								<div class="option">
+									再次预定
+								</div>
+							</a>
+							<a href="#" style="font-size: 13px;">
+								<div class="option">
+									立即评价
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cell1">
+				<div class="title">
+					北京新国贸饭店<span>交易成功</span>
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">北京新国贸饭店）</div>
+						<span class="intro">超豪华双床房</span>
+						<span class="spay">应付账款￥1574.00</span>
+						<span class="pay">实际付款：￥1574.00</span>
+					</div>
+					<div class="img"><img src="images/121.jpg" width="100px" /></div>
+				</div>
+				<div class="footer">
+					<div class="btn">
+						<a href="#" style="font-size: 13px;" width>
+							<div class="option">
+								再次预定
+							</div>
+						</a>
+						<a href="#" style="font-size: 13px;">
+							<div class="option">
+								立即评价
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg"></div>
+		<div class="hovertreebottom">
+			<nav>
+				<div id="hovertreebottom_ul">
+					<ul class="box">
+						<li>
+							<a href="我的订单 .html" class=""><span>订单</span></a>
+						</li>
+						<li>
+							<a href="首页.html" class=""><span>首页</span></a>
+						</li>
+						<li>
+							<a href="我的.html" class=""><span>我的</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+
+	</body>
+
+</html>

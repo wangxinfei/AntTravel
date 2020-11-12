@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆界面</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- 使界面适用于当前设备 -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+		<script type="text/javascript">
+			function loginClick() {
+				var name = document.login.username.value;
+				var pwd = document.login.password.value;
+				if (name == null || name.length == 0) {
+					alert("用户名不能为空！");
+					return;
+				}
+				if (pwd == null || pwd.length == 0) {
+					alert("密码不能为空！");
+					return;
+				}
+				document.login.submit();
+			}
+		</script>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+		</style>
+	</head>
+	<body>
+		<table class="login_tb1" align="center" cellspacing="200px" background="images/login.jpg" >
+			<tr align="center" valign="middle">
+				<td height="100%">
+					<table class="login_tb2" cellSpacing=0 cellPadding=20px border=0 align="center">
+						<tr valign="middle">
+							<td class="login_td1" colSpan=2>
+								<font face="黑体" size="4px" color=white style="font-size: 30px;">蚁游-用户登录</font>
+							</td>
+						</tr>
+						<tr>
+							<td class="login_td2">
+								<form action="LoginJsp.jsp" name="login" method="post">
+									<table cellpadding="15px" width="100px">
+										<tr>
+											<td width="76" height="20" class="login_td">登录名：</td>
+											<td width="115" height="20" class="login_td"><input class="login_input" type="text" name="username"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td height="20" class="login_td">密 码：</td>
+											<td height="20" class="login_td"><input type="password" name="password" class="login_input"></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td height="20" colspan="2" align="center"><input type="reset" value="重置" class="login_button" />  
+											<!-- <input type="submit" value="提交" <a href="home.html" onclick="home.html.submit()" class="button">提交</a>/>
+											 -->
+											 <a href="reg.asp"></a>
+											 <input type="button" value="登录" onclick="location.href='首页.html'">
+											<td class="login_td" align="left"><a href="注册.html">新用户注册</a></td>
+										</tr>
+									</table>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan=2 style="background-image: url(images/89.5jpg)" height=56 align="center" class="login_td">版权所有</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<title>酒店首页 </title>
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 微软雅黑;
+				background: rgb(240, 240, 240);
+				font-family: .PingFangSC-Regular;
+				font-size: 10px;
+			}
+
+			header {
+				height: 40px;
+				line-height: 60px;
+				width: 100%;
+				/* margin-top: 20px; */
+				color: #000000;
+				font-family: 黑体;
+				font-weight: 200;
+				font-size: 20px;
+				margin-left: 20px;
+				/* 背景色渐变 */
+				background: linear-gradient(to bottom right, #F56739, #FB9749);
+			}
+		</style>
+		<script src="js/jquery-1.11.4.min.js"></script>
+		<style type="text/css">
+			.head {
+				font-size: 20px;
+				height: 2.74rem;
+				background: #26A69A;
+				color: white;
+				text-align: center;
+				line-height: 2.80rem;
+			}
+
+			.head>a {
+				color: white;
+				float: left;
+				/* margin-left: 0.12rem; */
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="header">
+			<div class="head" style="width: 100%;">
+				<a href="首页.html" style="margin-left: 12px;">< 
+				<div id="daohang" style="width: 100%; margin: auto;" >
+					</a> 蚁游攻略
+			</div>
+		</div>
+		<div class="hovertreebottom">
+			<nav>
+				<div id="hovertreebottom_ul">
+					<ul class="box">
+						<li>
+							<a href="我的订单 .html" class=""><span>订单</span></a>
+						</li>
+						<li>
+							<a href="home.html" class=""><span>首页</span></a>
+						</li>
+						<li>
+							<a href="我的.html" class=""><span>我的</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 20px">
+			<div class="container">
+				<div class="navbar-header">
+
+				</div>
+			</div>
+			</div>
+		</nav>
+				<script>
+			var t;
+		
+			function a() {
+				clearInterval(t);
+				t = setInterval('b()', 3000);
+		
+				$('#picture').find('img').eq(0).appendTo($('#picture'));
+			}
+		
+			function b() {
+		
+				clearInterval(t);
+				t = setInterval('b()', 3000);
+				$('#picture').find('img:last').eq(0).prependTo($('#picture'));
+			}
+			t = setInterval('b()', 3000);
+		</script>
+		<div>
+		<ul class="list-group" style="padding-left: 2px; margin-top: -40px;">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<!-- <div class="listpic">
+				</div> -->
+					<div class="listpic">
+						<img src="images/top1.png" height="200px" width="370px">
+					</div>
+					<div id="pretime" align="center" style="font-size: 30px;">
+						<a href="#" style="color: cornflowerblue;">景点攻略</a>
+					</div>
+					<div id="nav1" align="right"><b>城市</b>
+						<select class="dropdown" name="list" onchange="window.location=this.value;">
+							<option selected="selected" disabled="disabled" style='display: none' value=''></option> <!-- 定义初始选项为空 -->
+							<option value="北京景点.html">北京景点</option>
+							<option value="上海景点.html">上海景点</option>
+							<option value="成都景点.html">成都景点</option>
+							<option value="南京景点.html">南京景点</option>
+							<option value="三亚景点.html">三亚景点</option>
+							<option value="西双版纳景点.html">西双版纳景点</option>
+							<option value="厦门景点.html">厦门景点</option>
+						</select>
+
+					</div>
+				</a>
+
+			</li>
+
+
+		</ul>
+		</div>
+		<ul class="list-group" style="margin-top: 20px;padding-left: 2px;">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<!-- <div class="listpic">
+				</div> -->
+					<!-- <img src="images/top2.jpg" width="750px" height="400px" /> -->
+					<div id="picture">
+						<img src="images/top2.jpg" height="200px" width="370px">
+					</div>
+
+					</div>
+					<div id="pretime" align="center" style="font-size: 30px;">
+						<a href="#" style="color: cornflowerblue;">酒店推荐</a>
+					</div>
+					<div id="nav1" align="right"><b>城市</b>
+						<select class="dropdown" name="list" onchange="window.location=this.value;">
+							<option selected="selected" disabled="disabled" style='display: none' value=''></option> <!-- 定义初始选项为空 -->
+							<option value="北京酒店.html">北京酒店</option>
+							<option value="上海酒店.html">上海酒店</option>
+							<option value="成都酒店.html">成都酒店</option>
+							<option value="南京酒店.html">南京酒店</option>
+							<option value="三亚酒店.html">三亚酒店</option>
+							<option value="西双版纳酒店.html">西双版纳酒店</option>
+							<option value="厦门酒店.html">厦门酒店</option>
+						</select>
+
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="list-group" style="margin-top: 20px;padding-left: 2px;margin-bottom: 50px;">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listpic">
+						<!-- <img src="images/top3.jpg" width="750px" height="400px" /> -->
+					</div>
+					<div class="pictrue">
+						<img src="images/top3.jpg" height="200px" width="370px">
+					</div>
+					<div id="pretime" align="center" style="font-size: 30px;">
+						<a href="#" style="color: cornflowerblue;">美食探店</a>
+					</div>
+					<div id="nav1" align="right"><b>城市</b>
+						<select class="dropdown" name="list" onchange="window.location=this.value;">
+							<option selected="selected" disabled="disabled" style='display: none' value=''></option> <!-- 定义初始选项为空 -->
+							<option value="北京美食.html">北京美食</option>
+							<option value="上海美食.html">上海美食</option>
+							<option value="成都美食.html">成都美食</option>
+							<option value="南京美食.html">南京美食</option>
+							<option value="三亚美食.html">三亚美食</option>
+							<option value="西双版纳美食.html">西双版纳美食</option>
+							<option value="厦门美食.html">厦门美食</option>
+						</select>
+
+					</div>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+	</body>
+</html>

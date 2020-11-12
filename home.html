@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>酒店首页</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="css/calendar.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 微软雅黑;
+				background: rgb(240, 240, 240);
+				font-family: .PingFangSC-Regular;
+			}
+
+			header {
+				/* height: 60px; */
+				/* line-height: 60px; */
+				width: 100%;
+				color: #fff;
+				font-family: 黑体;
+				font-weight: 200;
+				/* font-size: 20px; */
+				margin-left: 20px;
+				/* margin-top: 10px; */
+				/* 背景色渐变 */
+				background: linear-gradient(to bottom right, #F56739, #FB9749);
+			}
+		</style>
+		<script src="js/jquery-1.11.2.min.js"></script>
+
+		<style type="text/css">
+			html {
+				font-size: 100px;
+			}
+
+			.head {
+				font-size: 19px;
+				height: 0.44rem;
+				background: #26A69A;
+				color: white;
+				text-align: center;
+				line-height: 0.44rem;
+			}
+
+			.head>a {
+				color: white;
+				float: left;
+				margin-left: 0.12rem;
+			}
+		</style>
+		<style type="text/css">
+			.Date_lr {
+				width: 50%;
+				text-align: center;
+			}
+
+			.span21 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				font-size: 14px;
+				color: #666;
+				border: 1px solid #e5e5e5;
+				padding: 2px 8px;
+				line-height: 20px;
+				border-radius: .2rem;
+				background-color: #fff;
+			}
+
+			#checkinout {
+				height: 50px;
+				line-height: 50px;
+				position: relative;
+				margin: 10px;
+				padding: 2px 0;
+				display: -webkit-box;
+				display: flex;
+				border: 1px solid #e5e5e5;
+				border-radius: .02rem;
+				background-color: #fff;
+			}
+
+			#firstSelect p {
+				line-height: 25px;
+				color: #999;
+				font-size: 12px;
+			}
+
+			#startDate {
+				border: 0;
+				position: absolute;
+				left: 0;
+				margin: 0 auto;
+				width: 50%;
+				font-size: 16px;
+				color: #05c0ad;
+				text-align: center;
+			}
+
+			#endDate {
+				border: 0;
+				position: absolute;
+				right: 0;
+				margin: auto 0;
+				width: 50%;
+				font-size: 16px;
+				color: #05c0ad;
+				text-align: center;
+			}
+
+			.mask_calendar {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, .4);
+				display: none;
+				z-index: 9999;
+			}
+
+			.calendar {
+				height: 400px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+
+			.animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
+
+			@keyframes slideInDown {
+				from {
+					transform: translate3d(0, -100%, 0);
+					visibility: visible;
+				}
+
+				to {
+					transform: translate3d(0, 0, 0);
+				}
+			}
+
+			.slideInDown {
+				animation-name: slideInDown;
+			}
+		</style>
+		<style>
+			*{
+		        margin: 0;
+		        padding: 0;
+		        list-style: none;
+		    }
+		    a{
+		        text-decoration: none;
+		        color: #333;
+		    }
+		    img{
+		        display: block;
+		        width: 100%;
+		    }
+		    .nav .item{
+		        height: 40px;
+		        display: flex;
+		        background-color: lightseagreen;
+		        /* margin: 10px; */
+		        border-radius: 15px;
+		    }
+		  
+		    .item .pub{
+		        flex: 1;
+		        border-right: 1px solid #fff;
+		        /*border-bottom: 1px solid #fff;*/
+		    }
+		    .item .sub{
+		        flex: 100%;
+		    }
+		    .item .sub a{
+		        width: 50%;
+		        float: left;
+		        text-align: center;
+		        line-height: 45px;
+		        border-right: 1px solid #fff;
+		        border-bottom: 1px solid #fff;
+		        /*盒子内减*/
+		        box-sizing: border-box;
+		    }
+		    .nav .item:nth-child(4) .sub a{
+		        width: 33.333%;
+		   }
+		
+		</style>
+	</head>
+	<body>
+
+		<div class="header">
+			<div class="head" style="width: 100%;">
+				<a href="首页.html">
+					< <div id="daohang" style="width: 100%;">
+				</a> 蚁游酒店
+			</div>
+		</div>
+		<div class="hovertreebottom">
+			<nav>
+				<div id="hovertreebottom_ul">
+					<ul class="box">
+						<li>
+							<a href="我的订单 .html" class=""><span>订单</span></a>
+						</li>
+						<li>
+							<a href="shouye.html" class=""><span>首页</span></a>
+						</li>
+						<li>
+							<a href="我的.html" class=""><span>我的</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+		<div id="img">
+			<img src="images/head.jpg"  style="margin-top: -50px;" height="180px">
+		</div>
+		<div class="layout" style="font-size: 15px; margin-top: 5px;">
+			<div class="timg">
+			</div>
+			<nav class="nav">
+				<div class="item">
+					<div class="pub"></div>
+					<div class="sub">
+						<a href="优质酒店.html">优质酒店</a>
+						<a href="特惠酒店.html">特惠酒店</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="box">
+			<table border="1px" cellspacing="0" bordercolor="#ffffff" style="font-size: 14px; margin-left: 6px; color:#26A69A ;margin-top: 20px;"
+			 width="360px">
+			
+				<tr>
+					<td><div id="nav1" align="center">我喜欢的星级：
+							<select class="dropdown" name="list" onchange="window.location=this.value;">
+								<option selected="selected" disabled="disabled" style='display: none' value=''></option> <!-- 定义初始选项为空 -->
+								<option value="北京.html">7星</option>
+								<option value="上海景点.html">6星</option>
+								<option value="成都景点.html">5星</option>
+								<option value="南京景点.html">4星</option>
+								<option value="三亚景点.html">3星</option>
+								<option value="西双版纳景点.html">2星</option>
+								<option value="厦门景点.html">1星</option>
+							</select>
+						</div></td>
+				</tr>
+				<tr>
+					<td><div id="nav1" align="center">目的地：
+							<select class="dropdown" name="list" onchange="window.location=this.value;">
+								<option selected="selected" disabled="disabled" style='display: none' value=''></option> <!-- 定义初始选项为空 -->
+								<option value=".北京酒店">北京</option>
+								<option value="上海酒店.html">上海</option>
+								<option value="成都酒店.html">成都</option>
+								<option value="南京酒店.html">南京</option>
+								<option value="三亚酒店.html">三亚</option>
+								<option value="西双版纳酒店.html">西双版纳</option>
+								<option value="厦门酒店.html">厦门</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			<!-- <tr><td style="height: 50px;"> -->
+			<div id="checkinout" style="margin-top: 10px;">
+				<div id="firstSelect" style="width:100%;">
+					<div class="Date_lr" style="float:left;">
+						<P>入住</p>
+						<input id="startDate" type="text" value="" style="" readonly>
+					</div>
+					<div class="Date_lr" style="float:right;">
+						<p>离店</p>
+						<input id="endDate" type="text" value="" style="" readonly>
+					</div>
+					<span class="span21">共<span class="NumDate">1</span>晚</span>
+				</div>
+			</div>
+			<table border="0px" cellspacing="0px" cellpadding="0px" style="margin-left: 15px;width: 20%; float: left;" >
+				<tr><td><img src="images/豪华.jpg" style="margin-top: 40px;"></td></tr>
+				<tr><td style="font-size: 16px;"><a href="豪华型酒店.html">豪华型</a></td></tr>
+			</table>
+			<table border="0px" cellspacing="0px" cellpadding="0px" style="margin-left: 15px;  width:20%;float: left;">
+				<tr><td><img src="images/商务.jpg" style="margin-top: 40px;"></td></tr>
+				<tr><td style="font-size: 16px;"><a href="商务型酒店.html">商务型</a></td></tr>
+			</table>
+			<table border="0px" cellspacing="0px" cellpadding="0px" style="margin-left: 15px;width: 20%;float: left;" >
+				<tr><td><img src="images/舒适.jpg" style="margin-top: 40px;"></td></tr>
+				<tr><td style="font-size: 16px;"><a href="舒适型酒店.html">舒适型</a></td></tr>
+			</table>
+			<table border="0px" cellspacing="0px" cellpadding="0px" style="margin-left:15px;width: 20%;float: left;" >
+				<tr><td><img src="images/经济.jpg" style="margin-top: 40px;"></td></tr>
+				<tr><td style="font-size: 16px;"><a href="经济型酒店.html">经济型</a></td></tr>
+			</table>
+			
+		</div>
+		<div class="mask_calendar">
+			<div class="calendar"></div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/date.js"></script>
+		<script>
+			$(function() {
+				$('#firstSelect').on('click', function() {
+					$('.mask_calendar').show();
+				});
+				$('.mask_calendar').on('click', function(e) {
+					if (e.target.className == "mask_calendar") {
+						$('.calendar').slideUp(200);
+						$('.mask_calendar').fadeOut(200);
+					}
+				})
+				$('#firstSelect').calendarSwitch({
+					selectors: {
+						sections: ".calendar"
+					},
+					index: 2, //展示的月份个数
+					animateFunction: "slideToggle", //动画效果
+					controlDay: true, //知否控制在daysnumber天之内，这个数值的设置前提是总显示天数大于90天
+					daysnumber: "45", //控制天数
+					comeColor: "#2EB6A8", //入住颜色
+					outColor: "#2EB6A8", //离店颜色
+					comeoutColor: "#E0F4F2", //入住和离店之间的颜色
+					callback: function() { //回调函数
+						$('.mask_calendar').fadeOut(200);
+						var startDate = $('#startDate').val(); //入住的天数
+						var endDate = $('#endDate').val(); //离店的天数
+						var NumDate = $('.NumDate').text(); //共多少晚
+						console.log(startDate);
+						console.log(endDate);
+						console.log(NumDate);
+					
+					},
+					comfireBtn: '.comfire' //确定按钮的class或者id
+				});
+				var b = new Date();
+				b = new Date(b.getTime() + 240 * 3600 * 1000);
+				var ye = b.getFullYear();
+				var mo = b.getMonth() + 1;
+				mo = mo < 10 ? "0" + mo : mo;
+				var da = b.getDate();
+				da = da < 10 ? "0" + da : da;
+				$('#startDate').val(ye + '-' + mo + '-' + da);
+				b = new Date(b.getTime() + 24 * 3600 * 1000);
+				var ye = b.getFullYear();
+				var mo = b.getMonth() + 1;
+				mo = mo < 10 ? "0" + mo : mo;
+				var da = b.getDate();
+				da = da < 10 ? "0" + da : da;
+				$('#endDate').val(ye + '-' + mo + '-' + da);
+			});
+		</script>
+	</body>
+</html>

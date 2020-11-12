@@ -1,0 +1,37 @@
+.masonry { 
+                /* -moz-column-count:3; /* Firefox */ */
+                -webkit-column-count:2; /* Safari 和 Chrome */
+                column-count:2;
+                -moz-column-gap: 2em;
+                -webkit-column-gap: 2em;
+                column-gap: 2px;
+                width:800px;
+                margin:0 auto;
+				margin-top: 50px;
+				position: relative;
+				max-width: 800px;
+				text-indent: 2em;
+				line-height: 20px ;
+				table-layout: auto;
+				/* padding-right: 2em; */
+				/* text-align: left; */
+            }
+			/* ul{list-style: none;} */
+            .item { 
+                padding: 1px;
+                margin-bottom: 0px;
+                -moz-page-break-inside: avoid;
+                -webkit-column-break-inside: avoid;
+                break-inside: avoid;
+                /* background: #f60; */
+            }
+			@media screen and (max-width: 600px) { 
+                .masonry { 
+                    column-count: 2; // two columns on larger phones 
+                } 
+            } 
+            @media screen and (max-width: 600px) { 
+                .masonry { 
+                    column-count: 1; // two columns on larger phones 
+                } 
+            }

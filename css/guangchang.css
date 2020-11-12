@@ -1,0 +1,27 @@
+body{
+  margin-top: 50px;
+}
+
+.waterfall{padding: 30px 0;}
+.waterfall .list-group {
+  margin-right: 2px; }
+  .waterfall .list-group > li:first-child {
+    padding: 0;
+    background-color: white; }
+    .waterfall .list-group > li:first-child img {
+      width: 100%;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px; }
+  .waterfall .list-group > li {
+    background-color: #20B2AA; }
+
+@media (min-width: 300px) {
+  .waterfall .list-group {
+    width: 100px; } }
+@media (min-width: 300px) {
+  .waterfall .list-group {
+    width: 100px; } }
+@media (min-width: 300px) {
+  .waterfall .list-group {
+    width: 100px; } }
+

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+	
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta http-equiv="Cache-Control" content="no-cache" />
+			<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/><!-- 使界面适用于当前设备 -->
+			<title>攻略</title>
+			<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+			<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="css/guangchang.css">
+			<link rel="stylesheet" type="text/css" href="css/jquery.mVustomScrollbar.min.css" />
+			<link rel="stylesheet" type="text/css" href="css/demo.css" />
+			<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="css/public.css" />
+			<script src="js/sousuo.js" language="JavaScript"></script>
+	<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	    $(function () {            
+	        $(".like").click(function () {
+	            $(this).toggleClass('cs');                
+	        })
+	    })
+	</script>
+			<style >
+				.highlight{
+					background-color: yellow;
+				}
+			</style>
+			<style type="text/css">
+				* {
+					margin: 0;
+					padding: 0;
+				}
+	
+				div.listpic {
+					overflow: hidden;
+					width: 300px;
+					height: 200px;
+				}
+	
+				.listbox {
+					width: 300px;
+					height: 200px;
+					border: 1px solid black;
+					position: relative;
+				}
+	
+				.listbox ul li {
+					width: 30px;
+					height: 30px;
+					background: rgba(0, 0, 0, 0.5);
+					float: left;
+					list-style: none;
+					text-align: center;
+					line-height: 30px;
+					color: #fff;
+					margin: 0 2px;
+				}
+	
+				.listbox ul li a {
+					color: #fff;
+					text-decoration: none;
+				}
+	
+				.listbox ul {
+					position: absolute;
+					right: 20px;
+					bottom: 10px;
+				}
+	
+				.listbox ul li:hover {
+					background: rgba(0, 0, 0, 0.8);
+				}
+	
+				.listbox.listpic {
+					overflow: hidden;
+					width: 300px;
+					height: 200px;
+				}
+	
+			</style>
+		</head>
+		<body>
+			<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 20px">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#" style="font-size: 30px;">北京美食推荐</a>
+						<div class="form-group" align="right">
+						</div>
+				</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="container">
+					<div class="waterfall">
+					</div>
+				</div>
+			</div>
+	
+			<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+			<script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+			<script src="js/bootstrap-waterfall.js"></script>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/9.1.jpg" id="pic18" width="300px" height="200px" />
+							<img src="images/9.2.jpg" id="pic19" width="300px" height="200px" />
+							<img src="images/9.3.jpg" id="pic20" width="300px" height="200px" />
+							<img src="images/9.4.jpg" id="pic21" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic18">1</a></li>
+							<li><a href="#pic19">2</a></li>
+							<li><a href="#pic20">3</a></li>
+							<li><a href="#pic21">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user6.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">☀北京不可错过的美食</br>
+								*烤鸭</br>
+								不到长城非好汉，不吃烤鸭真遗憾！烤鸭是来北京必吃的美食，果木炭火烤制，色泽红润，肉质肥而不腻。</br>
+								*老北京涮羊肉</br>
+								一定要用铜锅炭火，羊肉现切，汤底清新。先涮毛肚，再涮肉，三下菜，最后煮杂面。</br>
+								*炸酱面</br>
+								黄瓜、豆芽、青豆等蔬菜，肉丁葱姜油爆再加酱炒成的炸酱，两者与面拌在一起，做出一碗老北京炸酱面。</br>
+								*小吃</br>
+								卤煮火烧、爆肚、豆汁、焦圈、炒肝......老北京的小吃，种类众多，口味各异，你可以挑自己喜欢的，也可以都先品尝一遍。</br>
+								“我家大门常打开，开放怀抱等你......”，别犹豫了，订票，出发，去大北京！
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/18.1.jpg" id="pic52" width="300px" height="200px" />
+							<img src="images/18.2.jpg" id="pic53" width="300px" height="200px" />
+							<img src="images/18.3.jpg" id="pic54" width="300px" height="200px" />
+							<img src="images/18.4.jpg" id="pic55" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic52">1</a></li>
+							<li><a href="#pic53">2</a></li>
+							<li><a href="#pic54">3</a></li>
+							<li><a href="#pic55">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user25.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">前门大街 （地址：北京市东城区前门大街（正阳门外））</br>
+								标签 4.3分 京味儿十足 京城古迹 建筑人文</br>
+		
+								(1)简介</br>
+								前门大街位于北京市中心南侧，自古就是北京最著名的商业街。如今也有多家老字号餐馆、店铺，还有各地的小吃汇集，适合逛街购物、享用美食。另外街上建筑都很古老，搭配牌坊、老招牌、
+								红灯笼等，很有老北京的味道。</br></br>
+								(2)游玩路线</br>
+								正常游客游玩前门大街都是在步行街部分，即北起正阳门箭楼的外面，南至珠市口东大街为止的这一部分，长约800米左右，在这里步行游玩即可。另外，步
+								行街上还有观光小火车可以乘坐，这种古老的小火车历史悠久，名叫铛铛车，全程几百米，票价约20元，适合带着小朋友前去乘坐。除了前门步行街外，步行街旁边的
+								如大栅栏、鲜鱼口等胡同也都算作是前门大街这一个区域，一起步行游玩。</br></br>
+								(3)品尝传统美食，感受京城韵味</br>
+								游玩前门大街，首先比较重要的事情就是享用传统美食。步行街及周边胡同里有全聚德、便宜坊、东来顺、六必居等众多老字号的餐厅，可以吃到烤鸭、涮羊肉等多种传统美食，而且这些老字号属于全城统一价，不会比外面贵，相反更加正宗，所以一定要选一家好好尝尝。除了大餐厅外，街边还有很多小吃和糕点店铺，如马迭尔冰棍、北京老酸奶、稻香村、都一处等，不过一般都比外面贵一点，稍微尝试一下可以，若要采购回去做礼物，推荐去其他地方的分店购买。另外，街上还有哈根达斯、星巴克、肯德基等国外的咖啡馆、快餐店品牌可以选择。
+								老建筑里除了老字号餐馆之外，前门大街和附近的
+								胡同里也有如瑞蚨祥、北京照相机总厂、中国冠帽文化博物馆等老字号店铺和老建筑，可以进入参观。另有各类的茶馆，里面往往有相声、评书等传统艺术表演
+								，可以走进胡同一一游玩。在街上拿起相机，对着眼前的老建筑、老招牌、牌坊和红灯笼拍上几张照片，也都充满了京城韵味。</br></br>
+								(4)开放时间</br>
+								全天开放，店铺营业时间各不相同，大约8:00-22:00左右。</br></br>
+								(5)门票信息 </br>
+								无需门票。</br></br>
+								(6)联系方式</br>
+								电话</br>
+								010-67060009</br></br>
+		
+								(7)交通信息</br>
+								地铁</br>
+								地铁2号线至[前门]站下</br>
+								公交</br>
+								乘坐特4、专2、126、专1、66、48、 22、67、8快速公交1线、69、71、20、301、82、93、723、特7、17、 729、 59、 5、120、 特11至[前门]下。</br></br>
+		
+								(8)旅游时节</br>
+								四季皆宜。</br></br>
+		
+								(9)游玩贴士</br>
+								20世纪50年代初，前门地区共有私营商业基本户800余家。前门大街东侧从北往南有大北照相馆、庆林春前门大街茶叶店、通三益果品海味店、力力餐厅、天成斋饽饽铺、便宜坊烤鸭店、老正兴饭庄、普兰德洗染店、亿兆棉织百货商店、前门五金店等店铺;西侧从北往南有月盛斋酱肉铺、华孚钟表店、庆颐堂药店、一条龙羊肉馆、盛锡福帽店、公兴文化用品店、祥聚公饽饽铺、龙顺成木器门市部、前门大街麻绳店、前门自行车商店、前门信托商店等店铺。1979年以后，在原有老字号商店和传统经营特色基本保留下来的同时，又陆续开设了五金交电、服装百货、自行车、食品、钟表、化工油漆等新店。
+								前门大街悠久的历史，造就了这里的许多中华老字号，如六必居酱园、同仁堂药店、瑞蚨祥绸布店、长春堂药店、内联升鞋店、张一元茶庄，还有月盛斋的酱肉店、都一处的烧卖店等16处老字号分列
+								道路两侧。在鲜鱼口、打磨厂等胡同内，也是店铺、饭馆林立，不过这里已没有享有很高声誉的老字号，而是外地人在此开设的条件简陋的美容美发店、小饭馆。记者到时正值中午时分
+								，每家饭馆都有一两个伙计站在店门口招徕过往行人，吆喝声此起彼伏。
+		
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/21.1.jpg" id="pic60" width="300px" height="200px" />
+							<img src="images/21.2.jpg" id="pic61" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic60">1</a></li>
+							<li><a href="#pic61">2</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user21.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">王府井小吃街 （地址：北京市东城区王府井）</br>
+								(1)标签：3.6分 美食街 北京菜 景点</br>
+		
+								(2)简介
+								王府井小吃街位于北京的核心地段王府井区域，故宫、天安门广场东侧，是北京最著名的小吃街之一。
+								这里有全国各地的特色小吃，无论是北京的各大老字号还是外地的各种知名小吃，都能在这里看到，甚至还有炸蝎子、
+								蝉蛹等很多比较重口味的小吃，很多外地来北京的游客都会到这里逛逛。不过由于 近年来王府井小吃街主要做游客生意
+								，价格都会偏高，而且味道也不十分地道，所以评价一般，建议不要报太高的期望，随意逛逛简单尝点就好。</br></br>
+		
+								(3)开放时间</br>
+								周一至周日10:00-22:O0</br></br>
+		
+								(4)人均消费</br>
+								55元</br></br>
+		
+								(5)交通信息</br>
+								*公交</br>
+								乘坐10路、41路、59路、99路、 120路、126路、127路、203路夜班车、205路夜班车、420路至[王府井]站。</br>
+								*地铁</br>
+								乘坐地铁1号线至[王府井]站，从A口出。</br></br>
+		
+								(6)旅游时节</br>
+								四季皆宜。</br></br>
+		
+								(7)游玩贴士</br>
+								王府井小吃街的小吃摊经常出现宰外地游客的情况，各位游客在点菜之前一定要问清楚价钱，遇到格外便宜的美食也要小心，有可能和结账的时候不是一个价钱。</br></br>
+		
+								(8)推荐小吃</br>
+								灌肠、爆肚、冰糖葫芦、老北京酸奶、茶汤、臭豆腐、烤玉米、章鱼小丸子、羊肉串
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/22.1.jpg" id="pic62" width="300px" height="200px" />
+							<img src="images/22.2.jpg" id="pic63" width="300px" height="200px" />
+							<img src="images/22.3.jpg" id="pic64" width="300px" height="200px" />
+							<img src="images/22.4.jpg" id="pic65" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic62">1</a></li>
+							<li><a href="#pic63">2</a></li>
+							<li><a href="#pic64">3</a></li>
+							<li><a href="#pic65">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user21.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">北京全聚德（前门店） （地址：北京市东城区前门大街30号）</br>
+								①标签：4.1分 美食林风味 烤鸭的满汉全席 老字号</br></br>
+		
+								②简介</br>
+								全聚德，中华老字号，创建于1864年（清朝同治三年），历经几代创业拼搏获得了长足发展。1999年1月，“全聚德“被国家工商总局认定为“驰名商标”，是中国第一例服务类中国驰名商标。全聚德烤鸭肉质鲜美，适合许多人吃。
+								全聚德菜品经过不断创新发展，形成了以独具特色的全聚德烤鸭为龙头，集“全鸭席”
+								和400多道特色菜品于一体的全聚德菜系，备受各国元首、政府官员、社会各界人士及国内
+								外游客喜爱，被誉为“中华第一吃”。原中华人民共和国总理周恩来曾多次把全聚德“全鸭席”选为国宴。</br></br>
+								③开放时间</br>
+								周一至周日11:00-13:30 16:30-20:00</br></br>
+		
+								④人均消费</br>
+								195元</br></br>
+		
+								⑤联系方式</br>
+								电话</br>
+								010-65112418</br></br>
+		
+								⑥交通信息</br>
+								*公交</br>
+								乘坐5路、8路、17路、20路、22路、48路、59路
+								、66路、67路、 69路、71路、82路、93路、120路、126路等至[前门] 站下，再沿前门大街往南走约300米。</br>
+								*地铁</br>
+								乘坐地铁2号线至[前门]站，由B或C口出。</br></br>
+		
+								⑦推荐菜品</br>
+								*芥末鸭掌
+								*盐水鸭肝
+								*鸭架汤
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/23.1.jpg" id="pic66" width="300px" height="200px" />
+							<img src="images/23.2.jpg" id="pic67" width="300px" height="200px" />
+							<img src="images/23.3.jpg" id="pic68" width="300px" height="200px" />
+							<img src="images/23.4.jpg" id="pic69" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic66">1</a></li>
+							<li><a href="#pic67">2</a></li>
+							<li><a href="#pic68">3</a></li>
+							<li><a href="#pic69">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user6.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">簋街小吃 （地址：北京市东城区）</br>
+								(1)标签：4.5分 北京美食聚集地 建筑人文 特色街区</br>
+		
+								(2)简介</br>
+								簋街位于东直门内，二环路东直门立交桥西段，西到交道口东大街东端。而说到北京的夜市，第一个想到的就是簋街了，它早已成为了北京人夜生活中不可缺少的一部分。</br>
+								开在这条街上的饭店生意都十分红火，一直开到后半夜，很多出租车司机都会到这里吃夜宵，所以被称为“鬼街”。后来觉得“鬼街”不太好听，被相关部门用“簋街”替代了。更巧的是这条街上的店铺以前也做过其他生意，但都没火起来，唯独开饭馆能火。白天时，人也不多，可以到了晚上便灯火通明、车水马龙。还真有点“鬼街”的样子。
+								在簋街吃饭，最大的特点就是“生活气息”。这里24小时营业，相比在大饭店吃饭的拘束，在这里叫上三五个朋友，七八瓶啤酒，再来一些小龙虾，别提多惬意了。
+		
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+			<script>
+				String.prototype.Trim = function()
+				{//去空格
+				    return this.replace(/\s/gi,"")
+				}
+				
+				function searchTarget(searchtext){//查找处理
+				    var reg = new RegExp(searchtext,"g");
+				    var objtext = document.getElementById("pretime").innerHTML;
+				    var sCurText;
+				    if(!reg.test(objtext)){//没找到
+				        alert(" can not find!");
+				        return;
+				    }
+				    else{//找到
+				        var prehtml = document.getElementById("pretime").innerHTML;//获取目标文本容器的HTML字符串
+				        var newinner = prehtml.replace(reg,'<span class="highlight">'+searchtext+'</span>')//处理HTML字符串，为目标文本加上样式，即替换对应的HTML结构
+				        document.getElementById("pretime").innerHTML = newinner;//把处理后的HTML字符串写回到容器中
+				    }	
+				}	
+				window.onload = function(){
+				    document.getElementById("searchbtn").onclick = function(){
+				        var searchtext = document.getElementById("search").value.Trim();
+				        searchTarget(searchtext);
+				    }
+				}
+				</script>
+				</ul>
+				</script>
+				<div class="hovertreebottom">
+							<nav>
+								<div id="hovertreebottom_ul">
+									<ul class="box">
+										<li>
+											<a href="我的订单 .html" class=""><span>订单</span></a>
+										</li>
+										<li>
+											<a href="shouye.html" class=""><span>首页</span></a>
+										</li>
+										<li>
+											<a href="我的.html" class=""><span>我的</span></a>
+										</li>
+						
+									</ul>
+								</div>
+							</nav>
+						
+						</div>
+					
+				<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+				<script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+				<script src="js/bootstrap-waterfall.js"></script>
+				
+			</body>
+		</html>

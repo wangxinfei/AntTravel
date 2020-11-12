@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+			<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- 使界面适用于当前设备 -->
+		<title>攻略</title>
+
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/guangchang.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mVustomScrollbar.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!-- <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/public.css" /> -->
+
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+    </script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+		<style type="text/css">
+			* {
+
+				margin: 0;
+				padding: 0;
+
+				-webkit-touch-callout: none;
+				/* prevent callout to copy image, etc when tap to hold */
+				-webkit-text-size-adjust: none;
+				/* prevent webkit from resizing text to fit */
+				-webkit-tap-highlight-color: rgba(210, 210, 210, 0.35);
+				/* make transparent link selection, adjust last value opacity 0 to 1.0 */
+				-webkit-user-select: none;
+				/* prevent copy paste, to allow, change 'none' to 'text' */
+			}
+
+			/* * {
+				font-family: "微软雅黑";
+				font-size: 12px;
+			}
+ */
+			ul,
+			li {
+				list-style: none;
+			}
+
+			.ylcon {
+				width: 100%;
+				min-width: 320px;
+			}
+
+			.tit {
+				height: 26px;
+				line-height: 26px;
+				padding: 0px 15px;
+				position: relative;
+				font-size: 15px;
+				color: #aaa;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+			}
+
+			.story {
+				border-bottom: 1px dashed #cecece;
+				padding: 0 15px 3px;
+				position: relative;
+			}
+
+			.story_t {
+				font-size: 1.2em;
+				color: rgba(0, 0, 0, 1);
+				padding-top: 5px;
+				padding-bottom: 2px;
+			}
+
+			.story_m {
+				color: rgba(110, 110, 110, 1);
+				line-height: 21px;
+				word-break: break-all;
+				word-wrap: break-word;
+				overflow: hidden;
+				font-size: 1.2em;
+				padding: 2px 0;
+			}
+
+			.story_time {
+				color: rgba(154, 154, 154, 1);
+				padding: 2px 0;
+			}
+
+			.story_hf {
+				background: rgb(245, 245, 245);
+				font-size: 1.2em;
+				border: 1px solid rgba(204, 204, 204, 0.2);
+				border-radius: 2px;
+				color: rgba(110, 110, 110, 1);
+				padding: 4px;
+				margin-bottom: 5px;
+			}
+
+			.opbtn {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		</style>
+
+
+
+
+		<style>
+			.highlight {
+				background-color: royalblue;
+			}
+		</style>
+
+
+
+
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			div.listpic {
+				overflow: hidden;
+				width: 300px;
+				height: 200px;
+			}
+
+			.listbox {
+				width: 300px;
+				height: 200px;
+				border: 1px solid white;
+				position: relative;
+			}
+
+			.listbox ul li {
+				width: 30px;
+				height: 30px;
+				background: rgba(0, 0, 0, 0.5);
+				float: left;
+				list-style: none;
+				text-align: center;
+				line-height: 30px;
+				color: #fff;
+				margin: 0 2px;
+			}
+
+			.listbox ul li a {
+				color: #fff;
+				text-decoration: none;
+			}
+
+			.listbox ul {
+				position: absolute;
+				right: 20px;
+				bottom: 10px;
+			}
+
+			.listbox ul li:hover {
+				background: rgba(0, 0, 0, 0.8);
+			}
+
+			.listbox.listpic {
+				overflow: hidden;
+				width: 300px;
+				height: 200px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 20px">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#" style="font-size: 30px;">北京景点攻略</a>
+					<div class="form-group" align="right">
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="container">
+				<div class="waterfall">
+				</div>
+			</div>
+		</div>
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+		<script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+		<script src="js/bootstrap-waterfall.js"></script>
+
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="wrapper">
+						<div class="listbox">
+							<div class="listpic">
+								<img src="images/1.1.jpg" id="pic1" width="300px" height="200px" />
+								<img src="images/1.2.jpg" id="pic2" width="300px" height="200px" />
+								<img src="images/1.3.jpg" id="pic3" width="300px" height="200px" />
+							</div>
+							<ul>
+								<li><a href="#pic1">1</a></li>
+								<li><a href="#pic2">2</a></li>
+								<li><a href="#pic3">3</a></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user3%20.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">
+								北京，是旅行者心目中的必去之地！拿起这篇指南，去大北京吧！</br>
+								☀第一次去北京，要做这些事：</br>
+								*去天安门，看国旗缓缓升起</br>
+								就算没去过北京，作为一个中国人，对天安门广场一定不会陌生，这座中国著名的广场，是祖国的心脏，也是第一次来北京的必去之地。每天日出时的升旗、日落时的降旗，是天安门广场最受瞩目的神圣仪式，吸引着无数游人聚集在这里，怀着激动的心情目视着五星红旗在空中飘扬。
+							</div>
+						</details>
+					</div>
+
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user2.jpg" /></a>
+										<p class="story_t"></p>
+										<p class="story_time">2019/07/19 09:00</p>
+										<p class="story_m">这个时候去天安门真的超热，做好防晒很重要哦，人也超级多，基本上算是人挤人</p>
+									</div>
+									<p class="story_hf">@用户BC11145:嗯，去看次升旗真的很震撼！！！还想再去一次</p>
+									<p class="story_hf">@用户1314:想问一下作者有什么北京旅行的推荐吗？想去。。</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+
+				</div>
+			</li>
+		</ul>
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+		<script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+		<script src="js/bootstrap-waterfall.js"></script>
+
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="wrapper">
+						<div class="listbox">
+							<div class="listpic">
+								<img src="images/2.1.jpg" id="pic4" width="300px" height="200px" />
+								<img src="images/2.2.jpg" id="pic5" width="300px" height="200px" />
+							</div>
+							<ul>
+								<li><a href="#pic4">1</a></li>
+								<li><a href="#pic5">2</a></li>
+							</ul>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user5.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">
+								进宫，穿行在紫禁城的红墙间</br>
+								穿行在高高的红墙间，从“前朝”去往“后宫”，透过殿门与金丝楠木的窗户，窥探里面那段尘封的时光。还有那些皇家收藏的珍宝，背后隐藏的往事与岁月，一定比神剧中的剧情更加的精彩。
+
+							</div>
+						</details>
+					</div>
+
+
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/3.1.jpg" id="pic6" width="300px" height="200px" />
+							<img src="images/3.2.jpg" id="pic7" width="300px" height="200px" />
+							<img src="images/3.3.jpg" id="pic8" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic6">1</a></li>
+							<li><a href="#pic7">2</a></li>
+							<li><a href="#pic8">3</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user1.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">*爬长城，去做一回好汉吧！</br>
+								俗话说“不到长城非好汉”，长城，是中国的地标，也是中国的文化符号，让长城成为了世界级的景观。北京的郊县及周边，有八达岭、慕田峪、居庸关等众多的长城景点，风格各异，各有千秋。八达岭最出名，慕田峪景色独秀，居庸关险峻陡峭。
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user2.jpg" /></a>
+										<p class="story_t">怜星</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">我想问还有那里的美食好吃呢？在线等！！！</p>
+									</div>
+									<p class="story_hf">@剑花烟雨:我第一次来，没去过</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/4.1.jpg" id="pic9" width="300px" height="200px" />
+							<img src="images/4.2.jpg" id="pic10" width="300px" height="200px" />
+
+						</div>
+						<ul>
+							<li><a href="#pic9">1</a></li>
+							<li><a href="#pic10">2</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">*逛胡同：触摸老北京的灵魂</br>
+								胡同，源自蒙古语中的一个词，几百年后，成为了老北京的文化特色。红墙碧瓦，地气与贵气并存，是老北京的“根”。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/5.1.jpg" id="pic11" width="300px" height="200px" />
+							<img src="images/5.2.jpg" id="pic12" width="300px" height="200px" />
+
+						</div>
+						<ul>
+							<li><a href="#pic11">1</a></li>
+							<li><a href="#pic12">2</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">*参观园林，去逛逛大花园</br>
+								夏天可以泛舟，冬天赏雪，春秋两季草木清新，这就是清朝皇帝的行宫与花园——颐和园。如今，这里是我国现存保存最大、最完整的皇家园林。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/6.1.jpg" id="pic13" width="300px" height="200px" />
+							<img src="images/6.2.jpg" id="pic14" width="300px" height="200px" />
+							<img src="images/6.3.jpg" id="pic15" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic13">1</a></li>
+							<li><a href="#pic14">2</a></li>
+							<li><a href="#pic15">3</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user4.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">☀来北京，当一回文艺青年</br>
+								这座城市，聚集了来自四面八方寻找梦想的文艺青年。当你来到北京，不妨当一回文艺青年吧。</br>
+								*看一场北京人艺的话剧</br>
+								“人艺”，这两个字对于话剧迷来说，就是品质的保证。剧场很多，话剧的形式也越来越多元化，但最有北京味儿、最厚实的表演功力，还是在人艺。那些活跃在大小荧幕中
+								的“大腕”们，不少都是来自人艺，宋丹丹、徐帆、何冰......你还可以去中央试验话剧院、海淀剧院，那里的舞台更加具有青春气息。</br>
+								*听一听的德云社的相声</br>
+								德云社，以及他的创建人郭德纲，几乎成为了相声的代名词，虽然有“业内人士”说德云社的相声层次不够高，但德云社让许多年轻观众喜欢上了相声，而火爆的市场，说明了一切。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user47.jpg" /></a>
+										<p class="story_t">星云</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">德云社的票真的一票难求</p>
+									</div>
+									<p class="story_hf">@小小呀:嗯嗯，是的，不过节目真的好看</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/7.1.jpg" id="pic16" width="300px" height="200px" />
+							<img src="images/7.2.jpg" id="pic17" width="300px" height="200px" />
+
+						</div>
+						<ul>
+							<li><a href="#pic16">1</a></li>
+							<li><a href="#pic17">2</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user1.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">☀感受时尚潮流的“新北京”</br>
+								*冰火两重天</br>
+								鸟巢与水立方，一个高端大气、外观独特；一个彩灯绚丽，大方高级。夜晚来到这里，火红的鸟巢与蓝色的水立方，就像是“冰火二重天”。
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/8.1.jpg" width="300px" height="200px" />
+
+						</div>
+
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user45.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">*三里屯的时尚潮流</br>
+								京城著名的酒吧和夜店、潮流名品店，这里都有！也许是因为靠近使馆区，三里屯与北京城其他的商业区，如王府井、西单等不一样，空气中都弥漫着年轻与国际的气息。
+							</div>
+						</details>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/10.1.jpg" id="pic22" width="300px" height="200px" />
+							<img src="images/10.2.jpg" id="pic23" width="300px" height="200px" />
+							<img src="images/10.3.jpg" id="pic24" width="300px" height="200px" />
+							<img src="images/10.4.jpg" id="pic25" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic22">1</a></li>
+							<li><a href="#pic23">2</a></li>
+							<li><a href="#pic24">3</a></li>
+							<li><a href="#pic25">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user5.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">北京必打卡景点</br>
+								（1）故宫 （地址：北京市东城区景山前街4号）</br>
+								①标签 4.7分 5A 世界五大宫之首 京城古迹</br>
+								②简介</br>
+								绝大多数游客第一次来北京，都会把故宫当作必去之处。
+								北京故宫是中国明清两代的皇家宫殿，旧称为紫禁城，位于北京中轴线的中心，是中国古代
+								宫廷建筑之精华。北京故宫以三大殿为中心，占地面积72万平方米，建筑面积约15万平
+								方米，有大小宫殿七十多座，房屋九千余间。是世界上现存规模最大、保存最为完整的木质结构古建筑之一。</br>
+								北京故宫于明成祖永乐四年（1406年）开始建设，以南京故宫为蓝本营建
+								，到永乐十八年（1420年）建成。它是一座长方形城池，南北长961米，东西宽753
+								米，四面围有高10米的城墙，城外有宽52米的护城河。紫禁城内的建筑分为外朝和内廷两部分
+								。外朝的中心为太和殿、中和殿、保和殿，统称三大殿，是国家举行大典礼的地方。内廷的中心
+								是乾清宫、交泰殿、坤宁宫，统称后三宫，是皇帝和皇后居住的正宫。</br>
+								③游览古建筑群</br>
+								故宫是中国乃至世界上保存非常完整、规模非常大的木质结构古建筑群。这些金碧辉煌的建筑群可以分为“外朝”与“内廷”两大部分。以乾清门为界，乾清门以南为外朝，是皇帝处理政务的地方，以北为内廷，住着后宫嫔妃，是皇帝家庭生活之所。走过金銮殿、乾清宫、坤宁宫，在皇帝的御花园里欣赏花花草草，感觉好像穿越到了古装剧里。故宫内藏有大量珍贵文物，据统计有上百万件。以文物的种类不同，分为多个展馆。其中珍宝馆和钟表馆最引人注目，钟表馆每天11点和14点有钟表演示，可以看到清王朝珍藏的各种造型奇特的珍奇机械钟表，一定令你眼界大开！
+							</div>
+							</datalist>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user36.jpg" /></a>
+										<p class="story_t">没剥皮的。。</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">故宫好大好大！！！真的，得专门拿出一天来逛逛，这里红墙超适合拍照</p>
+									</div>
+									<p class="story_hf">@剑花烟雨:好期待</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/11.1.jpg" id="pic26" width="300px" height="200px" />
+							<img src="images/11.2.jpg" id="pic27" width="300px" height="200px" />
+							<img src="images/11.3.jpg" id="pic28" width="300px" height="200px" />
+							<img src="images/11.4.jpg" id="pic29" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic26">1</a></li>
+							<li><a href="#pic27">2</a></li>
+							<li><a href="#pic28">3</a></li>
+							<li><a href="#pic29">4</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user18.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">游玩路线</br>
+								故宫占地面积宽广，共有大大小小的宫殿70多座，游览路线繁多。想要好好地逛一圈，需要安排一天的时间。如果只是走马观花，看一看主要宫殿，两个小时就能逛完。</br>
+								两小时游推荐路线：</br>
+								如果只有两个小时的时间，建议沿着故宫中轴线参观。故宫最精华的景区基本都在这条线上，走路的时间也比较少。</br>
+								*午门-太和门-弘义阁（皇朝礼乐展）-太和殿-中和殿-保和殿-乾清门-乾清宫-交泰殿-坤宁宫-御花园-神武门</br>
+								*午门-太和门-太和殿-保和殿西庑（天府永藏殿）-保和殿东庑（宫阙述往展）-中和殿-保和殿-乾清门-乾清宫-交泰殿-坤宁宫-御花园-神武门</br></br>
+
+								半日游推荐路线：如果觉得两个小时的游览不够尽兴，你还可以到东、西六宫的院落里逛逛，这
+								里曾经住着紫金城里备受恩宠的妃嫔们。或者到钟表馆和珍宝馆看看，欣赏珍贵文物。</br>
+								*午门-文化殿（陶瓷馆）-太和门-太和殿-中和殿-保和殿-奉先殿（钟表馆）-乾清宫-交泰殿-坤宁宫-养心殿-西六宫区-御花园-神武门</br>
+								*午门-武英殿（书画馆）-太和门-太和殿-中和殿-保和殿-乾清宫-交泰殿-坤宁宫-东六宫区斋宫-宁寿宫区前朝（珍宝、石鼓二馆）-宁寿宫区后寝（珍宝、戏曲二馆和珍妃井）-神武
+								门</br></br>
+
+								一日游推荐路线：</br>
+								一日游规划路线几乎包括故宫博物院所以开放区域的重要宫殿和展馆，但也需要在参观时注意利用时间，并选择好自己感兴趣的展览陈列内容，若处处流连
+								，一天的时间恐怕也不足以进览胜景。</br>
+								午门-武英殿（书画馆）-文华殿（陶瓷馆）-太和门-太和殿-中和殿
+								-保和殿-乾清宫-交泰殿-坤宁宫-养心殿-西六宫区-御花园-东六宫区-奉先殿（钟表馆）-宁寿宫区（珍宝馆、戏曲馆）-神武门</br></br>
+
+								紫禁城最华美的石桥——金水桥</br>
+								桥栏雕琢精美，形似条条玉带，与古朴的华表和雄伟的石狮构成天安门前巍峨壮丽的景色。内金水桥，在太和门前广场
+								，共5座，单孔拱券式。造型秀美，同雄伟壮观的午门城楼和金碧辉煌的太和殿相映衬，引人入胜。</br></br>
+
+								皇帝大婚的洞房——坤宁宫</br>
+								坤宁宫是内廷后三宫之一。坤宁宫座北面南，面阔连廊9间，进深3间，黄琉璃瓦重檐庑殿顶。明代是皇后的寝宫。清顺治十二年改建后，为萨满教祭神的主要场所。改原明间开门为东次间开门，门的西侧四间设南、北、西三面炕，作为祭神的场所。清康熙、同治、光绪皇帝在此大婚，溥仪结婚也都是在坤宁宫举行。现为宫廷生活原状陈列。
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user2.jpg" /></a>
+										<p class="story_t">怜星</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">我想问还有那里的美食好吃呢？在线等！！！</p>
+									</div>
+									<p class="story_hf">@剑花烟雨:我第一次来，没去过</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/12.1.jpg" id="pic30" width="300px" height="200px" />
+							<img src="images/12.2.jpg" id="pic31" width="300px" height="200px" />
+							<img src="images/12.3.jpg" id="pic32" width="300px" height="200px" />
+							<img src="images/12.4.jpg" id="pic33" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic30">1</a></li>
+							<li><a href="#pic31">2</a></li>
+							<li><a href="#pic32">3</a></li>
+							<li><a href="#pic33">4</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user3%20.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">1.举世无双的各类珍宝——珍宝馆</br>
+								珍宝馆位于故宫博物院东部，设在故宫东北角的皇极殿西庑、养性殿、乐寿堂和颐和轩里。珍宝馆是一座
+								宝库，有各色宝石，闪闪发光的金银器皿，珍珠翡翠，还有金丝凤冠、象牙玉雕，各类珍宝举世无双；最为突出的是有一座镐多塔，重达5000公斤的大型玉雕。</br></br>
+
+								2.造型精美的各式钟表——钟表馆</br>
+								钟表馆设于位于北京市中轴线上的紫禁城当中的。清乾隆年间，宫廷中已经大量使用以发条为动力的机械钟表。清宫收藏的
+								各式钟表，主要是乾隆和嘉庆年间在广州、苏州和宫内做钟处制造，部分是英、法、瑞士等国出产。中国制造的钟表多
+								以黄金、珠玉、宝石为装饰，造型模拟楼阁、宝塔、花果、盆景等。英、法等国出产的钟表则模拟西洋建筑、车马人物等
+								。这些钟表报时报刻的方式多种多样，有的自动开门关门，机器人出来敲钟；有的到时琴鼓齐鸣，奏出优美的曲子；有的
+								花开、蝶舞、水注流动、飞鸟啼鸣，都以鲜艳的色彩、悦耳的音乐和吉祥的寓意取悦帝后。</br></br>
+
+								(1)开放时间</br>
+								旺季：4.1-10.31</br>
+								周二—周日 08:20-17:00（16:00停止售票），16：10停止入馆，周一不开放；</br>
+								淡季：11.1-次年3.31</br>
+								周二—周日 08:30-16:30（15:30停止售票），法定节假日周一不闭馆。</br></br>
+								(2)门票信息</br>
+								成人票60人民币/学生票20人民币；内部景点:珍宝馆10人民币/钟表馆10人民币 (4月1日-10月31日 周二-周日) 门票:成人票40人民币/学生票20人民币；内部景点:珍宝馆10人民币/钟表馆10人民币
+								(11月1日-次年3月31日 周二-周日) 半票:60岁及以上老年人、低保户，凭有效证件入园。 免票:离休干部凭离休证、1.2米以下儿童、残疾人、随团导游，凭有效证件入园。 tips:
+								学生票包含，大中小学生，除去成人教育、研究生。 故宫所有人需凭身份证入园。 故宫门票全部在官网提前十天预售，现场已不设购票窗口，但可微信支付入馆，每天入馆人数与网络售票共享。
+								“三八”妇女节，女性观众享受门票半价优惠；“六一”儿童节，14周岁以
+								下儿童（含14周岁），免费参观。随同家长一人，享受半价优惠；“八一”建军节，现役军人凭有效证件，免费参观。</br></br>
+
+								(3)交通信息</br>
+								乘坐1、120、2、52、59、82、99、夜1、夜2、夜17路、观光1线、观光2线路公交
+								车至天安门东站，或乘坐地铁1号线至天安门东站下车乘坐1、120、2、52、59、82、99、夜1、夜2
+								、夜17路、观光1线、观光2线路公交车至天安门东站，或乘坐地铁1号线至天安门东站下车</br></br>
+
+								(4)适宜游玩季节</br>
+								四季皆宜。春季气候舒适，在故宫赏花是不错的选择；夏季炎热，可在室内参观；秋季，北京秋高气爽，红叶满
+								地，游览故宫非常合适；冬季虽然寒冷，但是故宫的雪景确实美不胜收。</br></br>
+
+								(5)联系方式</br>
+								官网：http://www.dpm.org.cn</br>
+								电话：01085007938
+							</div>
+							<details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/13.1.jpg" id="pic34" width="300px" height="200px" />
+							<img src="images/13.2.jpg" id="pic35" width="300px" height="200px" />
+							<img src="images/13.3.jpg" id="pic36" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic34">1</a></li>
+							<li><a href="#pic35">2</a></li>
+							<li><a href="#pic36">3</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user17.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">南锣鼓巷 （地址：北京市东城区地安门东大街）</br>
+								(1)标签 4.4分 </br>北京最古老的街区之一 老北京胡同</br></br>
+
+								(2)简介</br>
+								南锣鼓巷是一条胡同，位于北京中轴线东侧的交道口地区，北起鼓楼东大街，南至平安大街，宽8米，全长787米，于元大都同期建成。是北京最古老的街区之一，至今已有740多年的历史。也位列规划中的25片旧城保护区之中。因其地势中间高、南北低，如一驼背人，故名罗锅巷。到了清朝，乾隆十五年（1750年）绘制的《京城全图》改称南锣鼓巷。
+								它是北京最古老的街区之一，是我国唯一完整保存着元代胡同院落肌理、规模最大、品级最高、资源最丰富的棋盘式传统民居区，也是最赋有老北京风情的街巷。周边胡同里各种形制的府邸、宅院多姿多彩，厚重深邃。南锣鼓巷及周边区域曾是元大都的市中心，明清时期则更是一处大富大贵之地，这里的街街巷巷挤满了达官显贵，王府豪庭数不胜数，直到清王朝覆灭后，南锣鼓巷的繁华也跟着慢慢落幕。
+								现已完全改造成为步行街，车辆不可通行。
+								2016年4月25日零时起，南锣鼓巷暂停接待旅游团队。同时，由于不堪景区客流量超载，南锣鼓巷主动取消了3A景区称号。</br></br>
+								(3)开放时间</br>
+								全天开放</br></br>
+
+								(4)门票信息</br>
+								无需门票</br></br>
+
+								(5)交通信息</br>
+								*公交</br>
+								到达北口乘107、124、204、635路在宝钞胡同站下，107、124、204路在小经厂站下；到达南口乘13、60、118、612、623路在锣鼓巷站下；乘104、108、113、201、612、758路在北兵马司站下，向西经过东棉花胡同即是。
+								</br>
+								*地铁</br>
+								乘地铁6号线或8号线南锣鼓巷站下。</br></br>
+
+								(6)旅游时节</br>
+								四季皆宜。</br></br>
+
+								(7)游玩贴士</br>
+								*南锣鼓巷西边紧邻什刹海，南边距离景山公园、故宫、天安门广场也不远。白天游玩故宫或者天安门，晚上可以来这吃小吃;若只喜欢逛街，可以把南锣鼓巷和什刹海安排在一起游览。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user2.jpg" /></a>
+										<p class="story_t">怜星</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">南锣鼓巷挤不进去啊，呜呜呜~~，不过全是美食店铺哦，这里精品店也很美啊</p>
+									</div>
+									<p class="story_hf">@剑花烟雨:我第一次来，没去过</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/14.1.jpg" id="pic37" width="300px" height="200px" />
+							<img src="images/14.2.jpg" id="pic38" width="300px" height="200px" />
+							<img src="images/14.3.jpg" id="pic39" width="300px" height="200px" />
+							<img src="images/14.4.jpg" id="pic40" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic37">1</a></li>
+							<li><a href="#pic38">2</a></li>
+							<li><a href="#pic39">3</a></li>
+							<li><a href="#pic40">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user16.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">八达岭长城 （地址：北京市延庆县京藏高速58号出口右转）</br>
+								(1)标签 4.6分 5A 玉关天堑</br>
+
+								(2)简介</br>
+								八达岭长城，位于北京市延庆区军都山关沟古道北口。是中国古代伟大的防御工程万里长城的重要组成部分，是明长城的一个隘口。八达岭长城为居庸关的重要前哨，古称“居庸之险不在关而在八达岭”。“不到长城非好汉”，很多国人都以这里为登临长城的主要选择。</br>
+								八达岭长城关城为东窄西宽的梯形，有东西二门。东门额题“居庸外镇”，西门额题“北门锁钥”。
+								关城向北延伸的长城是北长城，有敌楼12处。关城以南是南长城，有敌楼7处。南长城相比北长城的游客人数
+								较少，如果时间充裕，可以先去走南长城，再走北长城。</br></br>
+								(3)观赏位置</br>
+								除了在关城可以登长城外，在南4楼、北4楼、北8楼和北11楼也有登城口，都能登上长城。其中北8楼是
+								八达岭长城海拔最高的敌楼，又名“观日台”。这里距离关城有1500多米，是俯瞰长城的绝佳地点。在南
+								4楼和北8楼处，还建有索道。不想步行的游客，可以乘坐索道直接抵达敌楼，游玩结束再乘坐索道返回
+								。可节省体力，轻松游玩。</br></br>
+								(4)周边餐饮</br>
+								八达岭长城景区设有商业步行街，爬长城累了，下山后可以在此休息进餐。
+								除了高端大气的八达岭饭店(涉外饭店)，
+								还有炸酱面、狗不理、饺子馆等老北京风味的餐馆和赛百味、永和豆浆等快餐，可按需选择。吃
+								饱喝足，如果还有精力，不妨逛逛旁边的詹天佑纪念馆、中国长城博物馆和稍远一点的八达岭熊乐园。</br></br>
+
+								(5)开放时间</br>
+								旺季(4月1日-10月31日)6:30-19:00;淡季(11月1日-次年3月31日)7:30-18:00。</br></br>
+
+								(6)门票信息</br>
+								1、旺季门票(每年4月1日至10月31日)价格:40元/人。</br>
+								2、淡季门票(每年11月1日至次年3月31日)价格: 35元/人。</br>
+								3、长城门票半价优惠(旺季20元/人;淡季17.5元/人)政策:</br>
+								(1) 大、中、小学生(全日制教育学生，含港、澳、台凭学生证)到景区综合服务窗口凭有效证件购买半价优惠门票。</br>
+								(2) 6周岁(不含)至18周岁 (含)未成年人，可凭身份证、户口本或护照等有效证件购买半价优惠票。</br>
+								(3) 60岁以上(含)老年人凭身份证或老年证等有效证件，门票半价优惠。</br>
+								(4)持有本市社会保障金领取证的人员，凭领取证到景区综合服务窗口购买半价优惠门票。</br></br>
+								4、长城门票免费优惠政策:</br>
+								(1) 离休干部凭离休证，换取免费电子票游览。</br>
+								(2) 6周岁(含)以下或身高1.2米(含)以下儿童，换取免费电子票游览。</br>
+								残疾人(含军残)凭残疾证或军残证等有效证件，换取免费电子票游览。</br>
+								现役军人凭有效证件，换取免费电子票游览。</br>
+								北京市户籍65岁(含) 以上老人凭身份证，换取免费电子票游览。</br>
+								持“北京通一养老助残卡”的老人凭本人正式卡换取免费电子票游览；使用临时卡的老人需同时出示身份证换取免费电子票游览。</br></br>
+
+								(7)联系方式</br>
+								官网：http://www.badaling.cn/</br>
+								电话：01069121383</br></br>
+
+								(8)交通信息</br>
+								*公交</br>
+								1、919路公交车，票价12元。</br>
+								德胜门—延庆早上6:00发车末班车19:00。
+								延庆—德胜门早上5:00发车末班车18:30。
+								2、877 (空调车)，6:00-17:00， 发于德胜门，12元。</br>
+								3、877 (普通车)，6:00-17:00，发于德胜门，7元。</br></br>
+								*旅游专线</br>
+								北京有很多旅游专线前往八达岭长城。</br>
+								游一路发于前门;游一支发于丰南马场;游二发于北京站;游二支发于崇文门;游三发于东大桥;游三支发于郎家园;游四发于动物园;游五发于前门西大桥;游五支发于颐和园。S2线动车组
+								市内在北京北站乘坐S2线至八达岭。
+								票价:一站5元，两站以上6元</br></br>
+
+								(9)旅游时节</br>
+								3月-5月和9月-11月为最佳登长城时间。 春季是北京气温最舒适的季节，此时游人较少，可尽情领略雄关漫道。 秋季则是天高气爽，登长城看万山树叶红遍奇景。
+								冬夏二季气候条件比春秋略逊，但是冬季被大雪复盖的长城更有庄严巍巍气势。</div>
+							<details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/15.1.jpg" id="pic41" width="300px" height="200px" />
+							<img src="images/15.2.jpg" id="pic42" width="300px" height="200px" />
+							<img src="images/15.3.jpg" id="pic43" width="300px" height="200px" />
+							<img src="images/15.4.jpg" id="pic44" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic41">1</a></li>
+							<li><a href="#pic42">2</a></li>
+							<li><a href="#pic43">3</a></li>
+							<li><a href="#pic44">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user14.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">颐和园 （地址：北京市海淀区新建宫门路19号）</br>
+								(1)标签 4.7分 5A 皇家行宫御苑 京城古迹 建筑人文</br>
+
+								(2)简介</br>
+								颐和园原是清朝帝王的行宫和花园，又称清漪园，以昆明湖、万寿山为基址，按照江南园林的设计手法建造，是我国现存规模非常大，保存非常完整的皇家园林，景色极具优雅，还有很多珍贵的文物，被誉为“皇家园林博物馆”。
+								颐和园规模宏大，全园可分3个区域:以仁寿殿为中心的政治活动区;以玉澜堂、乐寿堂为主体的帝后生活区;以长廊沿线、后山、西区为主的苑园游览区。整个园区约四分之三为昆明湖所占据，湖畔有亭、台、楼、阁、廊、榭等建筑物百余座三千余间，其中佛香阁、长廊、石舫、苏州街、十七孔桥等皆为家喻户晓的代表性建筑，也是游览颐和园不可错过的地方。
+								游览颐和园，除了参观金碧辉煌的殿堂建筑，乘坐景区内的游船，泛舟昆明湖上，既轻松惬意，又不误观光赏景。园内有游船码头8个:八方亭、文昌阁、玉澜堂、排云殿、石丈亭、铜牛、石舫和南湖岛，5种不同类型的游船:脚踏船、手划船、电瓶船、龙船和大型画舫。游船价格路线各异，可各取所需。</br></br>
+								(3)园内餐饮</br>
+								颐和园面积较大，完整的游览完至少要4-5个小时。逛得累了饿了，可以坐下来补充下能量。园内共有三个快餐亭，分别位于知春亭、排云殿东九间和石丈亭处，主要经营日常饭菜和面
+								食，价格相对来说还算公道。如果想要应景儿，园内还有一处专营宫廷御膳的老字号饭庄；听鹂馆，在那里可以品尝到具有宫廷风味的食物，不过价格就比日常菜贵一些。</br></br>
+
+								(4)开放时间</br>
+								4月1日-10月31日6:30-18:00; 11月1日-次年3月31日7:00-17:00</br>
+								园中园开放时间:4月1日-10月31日8:30-17:00(最晚离园时间20:00); 11月1日-次年3月31日9:00-16:00( 最晚离园时间19:00)</br>
+								静园时间为: 4月1日-10月31日 最晚离园时间20:00; 11月1日-次年3月31日最晚离园时间19:00</br></br>
+
+								(5)门票信息</br>
+								旺季：普通票:30人民币；公园+园中园:60人民币 (4月1日-10月31日 周一-周日) </br>
+								淡季：普通票:20人民币；公园+园中园:50人民币 (11月1日-次年3月31日 周一-周日) </br>
+								半票:学生及老人凭有效证件可购买半价景区门票。 </br>
+								tips: 园中园需另购票：德和园5元/人，佛香阁10元/人，文昌院20元/人，苏州街澹宁堂10元/人。</br> </br>
+
+								(6)联系方式</br>
+								官网</br>
+								http://www.summerpalace-china.com/</br>
+								电话</br>
+								01062881144</br></br>
+
+								(7)交通信息</br>
+								到达西宫门：乘469、539路在颐和园西门站下，即可到达 </br>
+								到达北宫门：乘地铁4号线北宫门站D口出，或乘303、330、331、346、375、384、563、601、608、683、696、697、718、特5、特10路在颐和园北宫门站下，即可到达 </br>
+								到达东宫门：乘地铁4号线西苑站C2口出，或乘209、330、331、332、346、394、601、608、626、683、690、696、718路在颐和园站下，即可到达 </br>
+								到达新建宫门：74、374、437、952路在颐和园新建宫门站下，即可到达</br></br>
+
+								(8)旅游时节</br>
+								9-10月最佳。北京的春秋不冷不热，气候适中，是理想的旅游季节，尤其是秋季天高气爽，气候宜人；夏季虽炎热，但是景色绝佳，在昆明湖游船赏景再合适不过了；冬季寒冷，湖面结冰，白雪
+								下的颐和园也别有一番神秘的景致。</br></br>
+
+								(9)游玩贴士</br>
+								颐和园导游服务包括电子语音导游、手机导览app和导游员讲解三种。电子语音导游分布在东宫门、文昌院门、北宫门、北如意门、新建宫门、南如意门(只能退机)
+								，讲解语种为19种语言。手机导览可以在颐和园官方网站下载安装或在各大网络应用商城搜索“颐和园”关键字下载“颐和园官方版”手机应用安装使用。导游员讲解接待站分布在
+								东宫门、北宫门、新建宫门区域，可为中外游客提供中、英、俄等多语种导游讲解服务。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user49.jpg" /></a>
+										<p class="story_t">怜星</p>
+										<p class="story_time">2016/08/22 13：48</p>
+										<p class="story_m">颐和园好看吗？听说没啥好逛的吧</p>
+									</div>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/16.1.jpg" id="pic45" width="300px" height="200px" />
+							<img src="images/16.2.jpg" id="pic46" width="300px" height="200px" />
+							<img src="images/16.3.jpg" id="pic47" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic45">1</a></li>
+							<li><a href="#pic46">2</a></li>
+							<li><a href="#pic47">3</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user22.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">天安门广场 （地址：北京市东城区长安街（天安门和正阳门之间））</br>
+								(1)标签 4.7分 世界上最大的广场 建筑人文</br>
+
+								(2)简介</br>
+								天安门广场位于北京的中轴线上，是共和国的中心广场。天安门城楼
+								、人民大会堂、国家博物馆、人民英雄纪念碑等众多国家象征都坐落于此，
+								各种大型庆典也都在这里举办，每天清晨的升国旗仪式更是吸引无数游客前来瞻仰。</br></br>
+								(3)观看升降旗仪式</br>
+								*天安门广场升(降)国旗仪式分为节日升旗仪式和平日升旗仪式。</br>
+								每年元旦、春节、国际劳动节、国庆节和每月1日实施节日升旗仪式。节日升旗仪式由武警国旗护卫队38人、军乐
+								团62人实施，行进时吹奏《歌唱祖国》，升旗时吹奏《国歌》。其它时间为平日升旗仪式。平日升旗仪式由国旗护卫队38人实施，升旗时播放《国歌》录音。降旗仪式由国旗护卫队单独执行，没有音乐。</br>
+								*升降旗时间</br>
+								升(降)国旗仪式随每天日出时间而不同。具体升旗时间可以查看天安门管委会官网: http://www.tiananmen.org.cn/index.htm。</br>
+								天安门广场夜间执行清场制，升旗前大约半小时开放入口，降旗后开始清场，关闭入口(根据季节和实际客流情况，公安部门会进行临时调整)。游客可在升旗前半小时，到广场附近等侯。</br>
+								升旗仪式开始前，天安门警方将提前安排民警在各出入口维持秩序，在国家博物馆西门外和人民大会堂东门外群众较多的两处拉上疏导线，并对等候观看升骐的群众进行整队。厂场开放时，群众将由
+								民警引导、护送进入广场。</br></br>
+								(4)主要景点</br>
+								天安门广场位于天安门正南，广场中央矗立着人民英雄纪念碑和庄严肃穆的毛主席纪念堂，广场西侧是人民大会堂，东侧是中国国家博物馆，南侧是两座有着几百年历史的古城楼一一正阳门和前门箭楼，这些雄伟的建筑与天安门一起，构成了现在的天安门广场。
+								现在的天安门广场，是共和国举行重大庆典、盛大集会和外事迎宾的重地。从建国至今，天安门广场经历了多次大阅兵，见证了中华民族的崛起和振兴。</br></br>
+
+								(5)开放时间</br>
+								升旗前(夏季一小时,冬季半小时)至降旗后(夏季一小时,冬季半小时)开放,其余时间清场,根据季节和实际客流情况,公安部门会进行临时调整。</br></br>
+
+								(6)门票信息</br>
+								免费开放</br>
+								登天安门城楼15元/人,学生及70岁以上老年人5元/人,现役军人等免费。</br></br>
+
+								(7)联系方式</br>
+								官网</br>
+								http://www.tiananmenlvyou.com.cn/</br>
+								电话</br>
+								01063095745</br></br>
+
+								(8)交通信息</br>
+								*公交 到达天安门广场东：2路, 5路, 22路, 120路, 126路, 203路夜班车, 210路夜班车, 专1路, 专2路 到达天安门广场西：2路, 5路, 120路, 126路, 210路夜班车, 专1路, 专2路
+								</br>
+								*地铁 地铁1号线天安门东、天安门西站下车</br></br>
+
+								(9)旅游时节</br>
+								四季皆宜，国庆前后最佳，介时广场将有大型主题花坛供人们观赏。</br></br>
+
+								(10)游玩贴士</br>
+								1、讲究文明礼貌。使用敬语，不口吐脏字;衣冠齐整，不袒胸露背;互谅互让，不争吵斗殴。</br>
+								2、维护环境卫生。不随地吐痰及口香糖，不随地乱扔瓜果皮核，烟头纸悄，食品包装及其他包装物，不随地乱倒污水污物。</br>
+								3、爱护公共设施。不踩踏垃圾桶，不蹬爬华灯基座，不损坏旗杆、护栏、灯具、电器、电信设备和公益告示牌匾。</br>
+								4、爱护广场绿地。不准进入绿地休息玩耍,不损坏绿地内的喷水设施，不攀折花草树木。</br>
+								5、维护广场秩序。不在广场踢足球、滑旱冰，不从事无照经营活动，不携带凳子参加广场升降旗仪式。</br>
+								6、保护文物古迹。不准在石质文物上乱写、乱画、刻划、张贴宣传材料。</br>
+								7、未经管理部门批准，各种机动车、自行车、人力三轮车不准进入和穿行中心广场。</br>
+								8、希望广大群众自觉遵守上述规定，服从值勤人员和工作人员的指挥管理。</br>
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/17.1.jpg" id="pic48" width="300px" height="200px" />
+							<img src="images/17.2.jpg" id="pic49" width="300px" height="200px" />
+							<img src="images/17.3.jpg" id="pic50" width="300px" height="200px" />
+							<img src="images/17.4.jpg" id="pic51" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic48">1</a></li>
+							<li><a href="#pic49">2</a></li>
+							<li><a href="#pic50">3</a></li>
+							<li><a href="#pic51">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user24.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">清华大学 （地址：北京市海淀区双清路30号）</br>
+								(1)标签 4.6分 红色工程师的摇篮 展馆展览</br>
+
+								(2)简介</br>
+								清华大学是中国最著名的大学之一，也是全中国大学的典范，校内绿草青青树木成荫，清澈的万泉河从腹地蜿蜒流过，勾连成一处处湖泊和小溪，滋润着一代代清华学子高洁的志趣和情操。很多人来到北京都会到这瞻仰一下最高学府的样子。
+								历史渊源</br>
+								清华大学创办于1911年，前身“清华学堂”是用美国退还的部分“庚子赔款”创办地一所留美预备学校。著名的“四大导师”--梁启超、王国维、陈寅恪、赵元任等曾在此任教。
+								建筑风格</br>
+								校内的清华园曾是皇家园林，亭台楼榭与湖水树林相映，环境非常优美。西区校园为老校区，以美式的校园布局和众多西洋风格的砖石结构为特色。东区校园则建于20世纪50年代，以苏式主楼为
+								主体，90年代开始在主楼前后新建了各院系系馆及综合体育馆、游泳馆、紫荆公寓等现代风格的建筑物，雄伟大气，而又安静舒适。</br></br>
+								(3)游览方式及路线</br>
+								游览方式</br>
+								清华大学的主要景观位于西门附近，游客从西门进入需要按照开放时间，持身份证排队登记，然后进入。仅游览西门部分的主要景观再从西门离开，仅需步行约2公里，走走看看1小时即可。清华整个的校园较大，长宽都有两公里左右，若要到校园其他地方逛逛则需3小时左右甚至更久。
+								清华校园内有公共汽车，还有专门做校园游生意的出租车，非常便利。但是游览清华最好的方式还是骑自行车，骑上共享单车，想走便走，想停便停，不放过清华园里的每一处美景。</br>
+								浏览线路</br>
+								线路1:半日游</br>
+								从西校门坐校内的公共汽车，停车场下，北行至近春园、清华园和大礼堂区，返至二校门，再坐车一路浏览风光，经主楼，到图书馆区、理学院，最后回到西校门。</br>
+								线路2:一日游</br>
+								若时间充裕，不妨拿出两个半天来，下午从南校门进入清华，逛逛南
+								北主干道，向西走到二校门，在大礼堂区、清华园和图书馆区消磨一下午，然后去“万人大食堂”吃晚饭。傍晚再到近春园吹吹晚风，看湖光树影的
+								风情变幻，晚上便住在校内的近春楼。第二天早起，在理学院区转转，然后坐校内的公共汽车到东部的中央主楼区，从主校门出清华，最后游览清华科技园。</br></br>
+
+								(4)必去打卡地</br>
+								图书馆:温暖的红砖墙，古色古香的拱券外廊，优美的弧形楼梯，还有馆前水池中古朴的铜质喷水塔，透出图书馆浓浓的书卷和人文气息。馆内洁净明亮，高贵朴质，不显豪华。图书
+								馆地板用软木铺成，人们行走其上，没有一点声响;书库的地板是用透亮的厚玻璃铺成，新颖大胆，可以望得见楼下的光。这里也是当年曹禺先生奋笔疾书，写下不朽的话剧《雷雨》的地方。</br>
+								近春园:近春园原是清咸丰皇帝的旧居，又是朱自清的《荷塘月色》的原址，每到夏季，诺大荷塘包围的一座岛，环境清幽，荷花
+								浮动，岛_上有高低的山丘和树林掩映，岛西南侧有一古式长廊，此岛通过一座汉白玉拱桥与岸边相连。</br>
+								银杏大道:从清华南门进入后，在南北与东西两条大道的交汇路口西行，便能看到一条满是银杏的大道。每到秋天，这条大道就被银杏叶点缀的金光闪闪。无论是清晨、午后还是黄昏，
+								只要阳光明媚，透过树叶缝隙照射到地面，斑斑点点的光将这条路渲染得唯美且梦幻。</br>
+								大礼堂:大礼堂与二校门隔草坪相望，圆顶红墙融合了希腊式与罗马式建筑风格，在大礼堂旁边还有一片大草坪，草坪和大礼堂的合影也是清华形象的代表之一。</br>
+								清华学堂:清华学堂是一座别致的二层小楼，是清华大学的第一批校舍，有灰色的墙砖、白色的立柱，中西合璧，建筑非常优雅。</br>
+								二校门:二校门位于清华学堂的南侧，这座乳白色圆拱式校门的照片流传甚广，是清华最为:著名的景点，也是清华的代表形象，绝大多数游客都会在此留影纪念。</br>
+								古月堂:建于清道光二年前后，梁启超、朱自清等都曾在这里居住过。后来成为清华第一个女生宿舍，因古月二字合起来为“胡”而被当时清华男戏称为狐堂。钱钟书和杨绛也是在此结识的。</br>
+								校园美食餐厅推荐: </br>
+								观畴园餐厅:名气最大的校内餐厅，又称“万人大食堂”，-楼有日常食堂窗口，二楼有自选区域，三楼可以点餐，可谓是应有尽有。比较推荐的有:滑蛋饭、麻辣香锅。
+								此外，清华自产的酸奶和冰淇淋也是相当美味，非常值得一试。</br>
+								芝兰园餐厅:芝兰园餐厅位于清华大学紫荆公寓区21号楼与22号楼之间，餐厅分为两层。来到这里一定要尝尝清青小火锅，尤其推荐特色番茄锅底，涮到最后都不会腻!</br>
+								熙春园餐厅:学校里营业时间比较长的餐厅，过了饭点一般就来这里点餐。位置离近春园不远，从西门进来比较方便。以经营淮扬菜为主，扬州蟹粉狮子头、干菜焖肉、黄焖河鳗、杭椒牛柳都比较值得推荐。</br>
+								桃李园餐厅:作为离宿舍最近的餐厅，桃李园是同学们早餐必刷地。推荐去一楼最左侧窗口尝尝烤冷面，或是“陕西风味”窗口的大盘鸡拌面。</br>
+								清芬园餐厅:刚刚翻建完成的新清芬园，装修大气典雅，一层风味食堂，二层家常菜为主，地下是清真食堂。但改建之前清芬园食堂的包子、麻辣香锅等窗口都已物是人非。推荐自制酸梅汤，酸甜适宜，开胃解腻。</br></br>
+
+								(5)开放时间</br>
+								校园对外开放参观从2018年7月21日(周六) 开始。学校教师寒暑假期间，每周一为校园休整日，不对外开放。如遇校内调休、调课、重要活动或极端天气等不宜开放的情况，暂停校园参观。开放
+								日入校时间为上午9:00，下午14:00。</br></br>
+
+								(6)门票信息</br>
+								免费开放</br></br>
+
+								(7)联系方式</br>
+								官网</br>
+								http://www.tsinghua.edu.cn/</br>
+								电话</br>
+								010-62793001</br></br>
+
+								(8)交通信息</br>
+								市内可搭乘365路、429路、432路、562路、614
+								路、664路、681路、699路、717路、982路、快速直达专线81路、特4路、运通105线、运通124线、运通126线至[清华附中]下车步行
+								前往即可地铁；或者乘坐地铁13号线在[五道口]站， 或地铁4号线在[北京大学东门]站下车</br></br>
+
+								(9)旅游时节</br>
+								四季皆宜</br></br>
+
+								(10)游玩贴土</br>
+								1、出行前建议在“清华大学”官方公众号预约进校园。</br>
+								2、小心校园内黑车司机和导游谨防上当受骗。</br>
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user33.jpg" /></a>
+										<p class="story_t">等等</p>
+										<p class="story_time">2015/07/12 20:48</p>
+										<p class="story_m">我想问清华园还有什么美食推荐吗？好像进园不好进啊</p>
+									</div>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/18.1.jpg" id="pic52" width="300px" height="200px" />
+							<img src="images/18.2.jpg" id="pic53" width="300px" height="200px" />
+							<img src="images/18.3.jpg" id="pic54" width="300px" height="200px" />
+							<img src="images/18.4.jpg" id="pic55" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic52">1</a></li>
+							<li><a href="#pic53">2</a></li>
+							<li><a href="#pic54">3</a></li>
+							<li><a href="#pic55">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user25.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">前门大街 （地址：北京市东城区前门大街（正阳门外））</br>
+								标签 4.3分 京味儿十足 京城古迹 建筑人文</br>
+
+								(1)简介</br>
+								前门大街位于北京市中心南侧，自古就是北京最著名的商业街。如今也有多家老字号餐馆、店铺，还有各地的小吃汇集，适合逛街购物、享用美食。另外街上建筑都很古老，搭配牌坊、老招牌、
+								红灯笼等，很有老北京的味道。</br></br>
+								(2)游玩路线</br>
+								正常游客游玩前门大街都是在步行街部分，即北起正阳门箭楼的外面，南至珠市口东大街为止的这一部分，长约800米左右，在这里步行游玩即可。另外，步
+								行街上还有观光小火车可以乘坐，这种古老的小火车历史悠久，名叫铛铛车，全程几百米，票价约20元，适合带着小朋友前去乘坐。除了前门步行街外，步行街旁边的
+								如大栅栏、鲜鱼口等胡同也都算作是前门大街这一个区域，一起步行游玩。</br></br>
+								(3)品尝传统美食，感受京城韵味</br>
+								游玩前门大街，首先比较重要的事情就是享用传统美食。步行街及周边胡同里有全聚德、便宜坊、东来顺、六必居等众多老字号的餐厅，可以吃到烤鸭、涮羊肉等多种传统美食，而且这些老字号属于全城统一价，不会比外面贵，相反更加正宗，所以一定要选一家好好尝尝。除了大餐厅外，街边还有很多小吃和糕点店铺，如马迭尔冰棍、北京老酸奶、稻香村、都一处等，不过一般都比外面贵一点，稍微尝试一下可以，若要采购回去做礼物，推荐去其他地方的分店购买。另外，街上还有哈根达斯、星巴克、肯德基等国外的咖啡馆、快餐店品牌可以选择。
+								老建筑里除了老字号餐馆之外，前门大街和附近的
+								胡同里也有如瑞蚨祥、北京照相机总厂、中国冠帽文化博物馆等老字号店铺和老建筑，可以进入参观。另有各类的茶馆，里面往往有相声、评书等传统艺术表演
+								，可以走进胡同一一游玩。在街上拿起相机，对着眼前的老建筑、老招牌、牌坊和红灯笼拍上几张照片，也都充满了京城韵味。</br></br>
+								(4)开放时间</br>
+								全天开放，店铺营业时间各不相同，大约8:00-22:00左右。</br></br>
+								(5)门票信息 </br>
+								无需门票。</br></br>
+								(6)联系方式</br>
+								电话</br>
+								010-67060009</br></br>
+
+								(7)交通信息</br>
+								地铁</br>
+								地铁2号线至[前门]站下</br>
+								公交</br>
+								乘坐特4、专2、126、专1、66、48、 22、67、8快速公交1线、69、71、20、301、82、93、723、特7、17、 729、 59、 5、120、 特11至[前门]下。</br></br>
+
+								(8)旅游时节</br>
+								四季皆宜。</br></br>
+
+								(9)游玩贴士</br>
+								20世纪50年代初，前门地区共有私营商业基本户800余家。前门大街东侧从北往南有大北照相馆、庆林春前门大街茶叶店、通三益果品海味店、力力餐厅、天成斋饽饽铺、便宜坊烤鸭店、老正兴饭庄、普兰德洗染店、亿兆棉织百货商店、前门五金店等店铺;西侧从北往南有月盛斋酱肉铺、华孚钟表店、庆颐堂药店、一条龙羊肉馆、盛锡福帽店、公兴文化用品店、祥聚公饽饽铺、龙顺成木器门市部、前门大街麻绳店、前门自行车商店、前门信托商店等店铺。1979年以后，在原有老字号商店和传统经营特色基本保留下来的同时，又陆续开设了五金交电、服装百货、自行车、食品、钟表、化工油漆等新店。
+								前门大街悠久的历史，造就了这里的许多中华老字号，如六必居酱园、同仁堂药店、瑞蚨祥绸布店、长春堂药店、内联升鞋店、张一元茶庄，还有月盛斋的酱肉店、都一处的烧卖店等16处老字号分列
+								道路两侧。在鲜鱼口、打磨厂等胡同内，也是店铺、饭馆林立，不过这里已没有享有很高声誉的老字号，而是外地人在此开设的条件简陋的美容美发店、小饭馆。记者到时正值中午时分
+								，每家饭馆都有一两个伙计站在店门口招徕过往行人，吆喝声此起彼伏。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/20.1.jpg" id="pic56" width="300px" height="200px" />
+							<img src="images/20.2.jpg" id="pic57" width="300px" height="200px" />
+							<img src="images/20.3.jpg" id="pic58" width="300px" height="200px" />
+							<img src="images/20.4.jpg" id="pic59" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic56">1</a></li>
+							<li><a href="#pic57">2</a></li>
+							<li><a href="#pic58">3</a></li>
+							<li><a href="#pic59">4</a></li>
+						</ul>
+
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user23.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">恭王府 （地址：北京市西城区柳荫街甲14号）</br>
+								(1)标签 4.5分 贪官和珅的府邸 京城古迹 </br></br>
+
+								(2)简介</br>
+								恭王府位于北京西城区前海西街，是清代规模最大的一座王府，先后作为大贪官和珅、庆亲王永磷的宅邸，后因恭亲王奕訴居住而得名
+								。恭王府历经了清王朝由鼎盛至衰亡的历史进程，故有“一座恭王府，半部清代史”的说法。恭王府是我国保存非常完整的王府建筑群
+								，拥有各式建筑群落30多处，布局讲究，气派非凡。整体分为府邸和花园两部分，府邸在前(南部)，花园在后(北部)。</br>
+								府邸</br>
+								府邸占地约3万平米，由严格的轴线贯穿着的多个四合院组成，分为中、东、西三路建筑，每路各有三个院落。</br>
+								*中路:中路最主要的建筑是银安殿和嘉乐堂，殿堂屋顶采用绿琉璃瓦，显示了中路的威严气派，同时也是亲王身份的体现。</br>
+								*东路:东路的前院正房是多福轩，和珅的儿子丰绅殷德，后来娶了乾隆皇帝的小女儿固伦和孝公主为妻，就居住于此，使这座豪宅一时成为了实际上的公主府。后进院落正房名为乐道
+								堂，是当年恭亲王奕欣的起居处。</br>
+								*西路:西路的院落较为小巧精致，主体建筑为葆光室和锡晋斋。建筑精品当属高大气派的锡晋斋，大厅内有雕饰精美的楠木隔段，是和珅仿紫禁城宁寿宫式样而建。
+								花园
+								花园位于府邸以北，又名萃锦园，占地28000余平米，有古建筑31处。当年恭亲王为修建花园，调集能工巧匠，上百名，建成后，其
+								富丽堂皇曾为京师百座王府之冠，是北京现存王府园林艺术的精华。全园以福字贯穿，主题清晰。园中的西洋门、御书“福”字碑和室内大戏楼并称恭王府“三绝”。</br></br>
+								(3)游览路线</br>
+								游览线路一:大门入园——后罩楼——龙王庙——西洋门——独乐峰——蝠池——安善——流杯亭——垂花门——明道斋 (展室) ——大戏楼——绿天小隐——福字碑——澄怀撷秀——秋水山房——榆关——出园</br>
+								游览线路二:大门入园——后罩楼——西洋门——独乐峰——安善堂——流杯亭——垂花门——竹子院——明道斋(展室)——牡丹院——大戏楼——蝠厅(茶艺)——邀月台——滴翠岩——秘云洞(福字碑)——澄怀撷秀——湖心亭——妙香
+								亭——榆关——龙王——出园</br>
+								游览线路三:大门入园——后罩楼——西洋门——独乐峰——蝠池——安善堂——福字碑——绿天小隐——蝠厅 (茶艺)
+								——大戏楼——荷花院——竹子院——明道斋(展室)——垂花门——艺蔬圃——流杯亭——妙香亭——榆关——渡鹊桥——澄怀撷秀——湖心亭——出园</br></br>
+
+								(4)开放时间</br>
+								旺季4月1日-10月31日8:00-17:00;</br>
+								淡季11月1日-次年3月31日9:00-16:00</br></br>
+
+								(5)门票信息 </br>
+								成人票: 40人民币(1月1日-12月31日 周一-周日)</br>
+								半票: 60周岁及以上老年人凭身份证、现役军人凭军人身份证件，6周岁(不含6周岁) 至18周岁未成年人凭身份证件，全日制大学本科及以下学历学生凭学生证件</br>
+								免票:离休干部凭离休证; 6周岁以下(含6周岁)或身高1.2米 (含1.2米) 以下儿童;残疾人凭残疾证</br></br>
+
+								(6)联系方式</br>
+								官网</br>
+								http://www.pgm.org.cn/</br>
+								电话</br>
+								010-83288149</br></br>
+
+								(7)交通信息</br>
+								*公交</br>
+								乘坐13、42路、90路、107路、111路、118路在(北海北门)下车，向西北步行约300米即可到达。</br>
+								*地铁</br>
+								乘坐地铁6号线，[北海北门] 站出B口，步行可达。
+
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+
+
+
+
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/1.jpg" id="pic322" width="300px" height="200px" />
+							<img src="images/2.jpg" id="pic323" width="300px" height="200px" />
+							<img src="images/3.jpg" id="pic324" width="300px" height="200px" />
+							<img src="images/4.jpg" id="pic325" width="300px" height="200px" />
+							<img src="images/5.jpg" id="pic326" width="300px" height="200px" />
+							<img src="images/6.jpg" id="pic327" width="300px" height="200px" />
+							<img src="images/7.jpg" id="pic328" width="300px" height="200px" />
+							<img src="images/8.jpg" id="pic329" width="300px" height="200px" />
+							<!-- <img src="images/9.jpg" id="pic330" width="300px" height="200px" /> -->
+						</div>
+						<ul>
+							<li><a href="#pic322">1</a></li>
+							<li><a href="#pic323">2</a></li>
+							<li><a href="#pic324">3</a></li>
+							<li><a href="#pic325">4</a></li>
+							<li><a href="#pic326">5</a></li>
+							<li><a href="#pic327">6</a></li>
+							<li><a href="#pic328">7</a></li>
+							<li><a href="#pic329">8</a></li>
+
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user46.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">
+								赶在9月一个人来了一场说走就走的旅行，玩的时间不长，算来回路上时间5天左右。</br>
+								️ 交通：我选择的是飞机，大家可以根据自己的情况选择高铁或者飞机。</br>
+								市内交通：建议地铁或公交，北京堵车很严重。基本上地铁站都能办一卡通，押金是20元。可以在里面充值，一个人基本
+								充50就够了。走的时候可以退押金。注意一下 不是每个地铁站都可以退押金，指定的站点才能退，大家提前查好哦。</br>
+								住宿：建议选择前门、王府井这些商圈，但是预算有限的话就选择靠近地铁站的。首都很大，著名景点相对分散，听出租大
+								叔说，很多来北京玩的都是每天都在挪地方。</br>
+								好啦，正式开始咱们游玩攻略了！</br></br>
+
+								第 天：前门-天安门-国家博物馆-故宫博物院-景山公园</br>
+								交通：因为我是住在前门的，所以走着路去的天安门广场。地铁的话在“前门站”下车，C口出。</br>
+								吃喝：吃东西基本聚集在前门了，有两个地方：大栅栏（北京人不念zha lan,这个念shi lan）和鲜鱼口。</br>
+								鲜鱼口：推荐“锦芳小吃”，便宜，当地人都会吃的一家店。我在他们家点了焦圈、豆汁、炸糕、艾窝窝、驴打滚，花
+								了14元，（emmm,豆汁建议不要轻易尝试，真的是食物发酵的味道）</br>
+								大栅栏：里面基本都是吃的，稻香村（记得认准三禾标志，山楂锅盔好吃啊。北京有北稻、苏稻，不要买错哦）、气味
+								博物馆、杜莎夫人蜡像馆、德云社都在这里</br>
+								天安门广场：记得从东边地下通道走，都是要过安检的，这里可以看到毛主席纪念堂、人民英雄纪念碑、人民大会堂、天安
+								门</br>
+								国家历史博物馆：为什么要把这个单列出来，真的值得一去，里面有四层，认真逛的话3
+								天才能看完，建议游览时间是3小时，记得先去负一层远古时代开始看起。国博是不需要
+								门票的 如果不想排队的话，提前一天在官网上预约，然后第二天刷身份证走预约通道，省去排队时间</br>
+								故宫博物院：游览顺序是 从南到北。还是建议早点去，因为有闭馆时间的。如果你要吃 烤鸭的话，可以选择这里的“四季
+								民福”，有景观台，风景很美。北京好吃的烤鸭都要排队的，所以…等等吧</br>
+								景山公园：门票2元，有没有被震惊到！公园很大，绿化很好，在这里可以拍到故宫的全貌 </br></br>
+
+								第 天：恭王府-鼓楼-烟袋斜巷-什刹海-南锣鼓巷</br>
+								恭王府：大贪官和珅的府邸。北京古迹保存最完整的就是恭王府了，据说是第二条龙脉，里面有康熙帝题的“福”字</br>
+								鼓楼：我没有买门票，往前走就是烟袋斜巷，里面是一些小资的店铺，这里有 吴裕泰冰淇淋，推荐
+								花茶味的，觉得比抹茶的好吃</br>
+								什刹海：之前看了好多军旅题材的电视剧，部队大院的孩子冬天都去什刹海溜冰，这次是见不到了。风景太美了，打卡拍
+								照。（后海是酒吧一条街，想去的话建议晚上去）</br>
+								南锣鼓巷：这个是必须要打卡的哈。往南锣走的路上有家 栗记麦香坊。它家仙豆糕好吃，出名的
+								是紫薯芝士仙豆糕，emmm，我本人是很喜欢紫薯的，但是这个芝士太多啦，吃多了会腻，建议大家买
+								原味就好。中央戏剧学院也在南锣里面，可以去打卡。 推荐几个好吃的 黑八私房炸酱面（也是被别人推荐的，味道
+								不错的炸酱面） 海小姐的玫瑰饼（9元） 文宇奶酪（奶酪味很足，推荐原味的）</br></br>
+
+								第 天：天坛公园-太古里-王府井-鸟巢、水立方</br>
+								天坛公园：明清皇帝用来祭天的地方。游览路线是南门进北门出 记得要买联票，可以看到祈年殿
+								和圜丘，如果你早起话可以去 老磁器口豆汁店吃早餐（在北京当地是很出名的）我逛完之后导航了附近的 护
+								国寺小吃（点了个面茶、奶油炸糕、糖火烧emmm，面茶上面浇的芝麻酱吃多了好腻，奶油炸糕太腻了我吃不了），路上还
+								遇到鲍师傅糕点，觉得比本地小吃好吃多了，果然我是一个甜食爱好者emmm</br>
+								太古里：潮人聚集地了。优衣库、zara、HM都有，野兽派也有店面。那边太多摄影师看见潮人就咔嚓咔嚓拍照</br>
+								王府井：有条小吃街，不建议在这里吃，贵且不好吃，商业气息太浓厚。逛街的话好几个商场都在这个，离得不远有
+								新天地，喜欢逛街的可以去（里面有家阿甘锅盔好吃啊）</br>
+								鸟巢和水立方：建议晚上去，可以看到夜景。没必要买门票。</br>
+								好啦，啰里八嗦说了这么多，希望可以帮到大家，美美的去玩吧！
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user28.jpg" /></a>
+										<p class="story_t">一水</p>
+										<p class="story_time">今天 00:02</p>
+										<p class="story_m">半夜看这个真的很痛苦！呜呜呜~</p>
+									</div>
+									<p class="story_hf">@花花:哈哈哈哈，我也是</p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user43.jpg" /></a>
+										<p class="story_t">天梯</p>
+										<p class="story_time">今天 00:13</p>
+										<p class="story_m">睡不着了~~~~</p>
+									</div>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/10.jpg" id="pic330" width="300px" height="200px" />
+							<img src="images/11.jpg" id="pic331" width="300px" height="200px" />
+							<img src="images/12.jpg" id="pic332" width="300px" height="200px" />
+							<img src="images/13.jpg" id="pic333" width="300px" height="200px" />
+							<img src="images/14.jpg" id="pic334" width="300px" height="200px" />
+							<img src="images/15.jpg" id="pic335" width="300px" height="200px" />
+							<img src="images/16.jpg" id="pic336" width="300px" height="200px" />
+							<img src="images/17.jpg" id="pic337" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic330">1</a></li>
+							<li><a href="#pic331">2</a></li>
+							<li><a href="#pic332">3</a></li>
+							<li><a href="#pic333">4</a></li>
+							<li><a href="#pic334">5</a></li>
+							<li><a href="#pic335">6</a></li>
+							<li><a href="#pic336">7</a></li>
+							<li><a href="#pic337">8</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user47.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">北京故宫拍照攻略+2套vsco调色教程</br>
+								北京故宫博物院，作为中国古代宫廷建筑精华，吸引了众多全球各地游客前来一睹它的宏伟。</br>
+								一年四季，都有它不一样的韵味。小采前两天顶着36度高温，大中午的来参观拍照，怕是我对摄影的“倔强”了吧！</br>
+								研究出两套个人挺喜欢的调色教程以及拍照攻略给大家，希望能对你有帮助。</br>
+								---------- 拍照攻略 ----------</br>
+								想要拍出“非游客照”，不妨注意以下几点 </br>
+								尽量选择天气晴朗前往，蓝天+红墙很震撼；</br>
+								可以选择进入午门之后的左右两个殿：文华殿、武英殿，人少好拍照；</br>
+								太和殿人太多，不建议停留太久，可选择拍对面的午门；</br>
+								多选择仰拍、特写墙壁或者瓦砾，避开人群；</br>
+								中轴线左右侧宫殿普遍人少，可多做选择；</br>
+								---------- 调色教程 ----------</br>
+								调色使用软件：VSCO</br>
+								第一套参数 </br>
+								预设：KK2+8</br>
+								参数：</br>
+								曝光-0.2</br>
+								色调高光+2.8</br>
+								白平衡色温+1.3</br>
+								白平衡色调+1.4</br>
+								饱和度-0.8</br>
+								瑞华+3.2</br>
+								清晰度+1.5</br>
+								HSL：蓝色：色度-1.4，饱和度+2.5，亮度-1.1</br>
+								第二套参数 </br>
+								预设：C8+12</br>
+								参数：曝光+1.2</br>
+								对比度-1.4</br>
+								色调阴影+1.9</br>
+								色调高光+1.4</br>
+								白平衡色温-0.6</br>
+								白平衡色调+0.2</br>
+								饱和度-1.0</br>
+								锐化+2.3</br>
+								清晰度+0.5</br>
+								颗粒+6.2</br>
+								暗角+8.1</br>
+								国际惯例：具体照片具体对待，参数只做参考，可根据自身进行微调哦~
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user22.jpg" /></a>
+										<p class="story_t">你是谁</p>
+										<p class="story_time">2015/12/22 23:21</p>
+										<p class="story_m">想问一下小仙女用的什么软件呢？在线求教</p>
+									</div>
+									<p class="story_hf">@剑花烟雨:我用的黄油，其实看自己喜欢喽，差不都都可以的</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/19.jpg" id="pic338" width="300px" height="200px" />
+							<img src="images/20.jpg" id="pic339" width="300px" height="200px" />
+							<img src="images/21.jpg" id="pic340" width="300px" height="200px" />
+							<img src="images/22.jpg" id="pic341" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic338">1</a></li>
+							<li><a href="#pic339">2</a></li>
+							<li><a href="#pic340">3</a></li>
+							<li><a href="#pic341">4</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user48.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">推荐9个北京一日小众打卡圣地，去这些地方想不拍不出大片都难！</br>
+								五道营胡同</br>
+								门票：免费</br>
+								建议时间:1-3小时</br>
+								地址：北京市东城区北部，安定门立交桥东侧</br>
+								带着岁月痕迹的砖墙和石瓦，被一间间装修风格清新雅致的咖啡厅、餐馆、原创手作店赋予了新鲜的气质，古旧的时光与鲜
+								活的生机在这里交汇流淌。</br>
+								周边紧邻国子监、雍和宫、南锣鼓巷可以一起玩。</br>
+								北京世界公园</br>
+								门票：100/人</br>
+								建议时间:2-3小时</br>
+								地址：北京市丰台区丰葆路158号</br>
+								公园内各国标志性建筑微缩版是1:10还原。公园之大，世界之小，风景名胜，尽收眼底适合亲子游。</br>
+								北京植物园</br>
+								门票：50元/人</br>
+								建议时间:3-4小时 四点半关门</br>
+								地址：北京市海淀区香山南路</br>
+								最近不是很流行古风穿越拍摄地，很多大片都是在这里拍的。地方有点远，植物公园非常大，步行5分钟才能到达温室
+								植物园本园，尽量穿平底鞋。</br>
+								每个馆的温度不同，植物里面差不多25-27度左右，沙漠植物馆40多度，可以拍出沙漠风格大片！</br>
+								中国铁道博物馆</br>
+								门票：20元/人</br>
+								建议时间:1-3小时，下午4点停止售票</br>
+								地址：北京市朝阳区酒仙桥北路1号院</br>
+								分为室外和室内两大展馆，室内展示了各个年代的铁路文物和车辆实物，可近距离观察每一辆
+								古董火车，还可以钻进驾驶室体验开一回火车。</br>
+								玉渊潭公园</br>
+								门票：10元/人</br>
+								建议时间:2-3小时</br>
+								地址：北京市海淀区西三环中路10号</br>
+								因为正是第31届玉渊潭樱花节，大面积的樱花靠近西门（一定要进对门比较省时省力）今年还有樱花特
+								色文创产品，樱花形状的冰激凌15元一个。</br>
+								旧物仓</br>
+								门票：26元/人</br>
+								建议时间:1-2小时</br>
+								地址：北京市大兴区旧宫镇久敬庄路</br>
+								因为不在城中心，就像是一个庞大的复古市集，收藏了那个特定年代的许多珍贵的碎片，愿你能从中找到属于自
+								己的美好回忆。很多老物件儿从记忆中跑到眼前，那感觉既让人怀念。</br>
+								中国油画院</br>
+								门票：免费</br>
+								建议时间:1-2小时</br>
+								地址：北京市朝阳区文化艺术新街1704号</br>
+								整个院子并不大，中央白色小教堂确实出片效果不错，还有两侧的红砖建筑也很好看。</br>
+								北京坊</br>
+								门票：免费</br>
+								建议时间:2-4小时</br>
+								地址：北京市西城区廊房头条21号院</br>
+								与普通的商业圈不同，除了女生们最爱的购物之外，它弘扬中华民族传统文化、融合老北京古香古色的底蕴。
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user50.jpg" /></a>
+										<p class="story_t">怜星</p>
+										<p class="story_time">昨天 20:48</p>
+										<p class="story_m">这里拍照特别好，就是适合小仙女们美美的拍照哦</p>
+									</div>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/23.jpg" id="pic342" width="300px" height="200px" />
+							<img src="images/24.jpg" id="pic343" width="300px" height="200px" />
+							<img src="images/25.jpg" id="pic344" width="300px" height="200px" />
+							<img src="images/26.jpg" id="pic345" width="300px" height="200px" />
+							<img src="images/27.jpg" id="pic346" width="300px" height="200px" />
+							<img src="images/28.jpg" id="pic347" width="300px" height="200px" />
+							<img src="images/29.jpg" id="pic348" width="300px" height="200px" />
+							<img src="images/30.jpg" id="pic349" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic342">1</a></li>
+							<li><a href="#pic343">2</a></li>
+							<li><a href="#pic344">3</a></li>
+							<li><a href="#pic345">4</a></li>
+							<li><a href="#pic346">5</a></li>
+							<li><a href="#pic347">6</a></li>
+							<li><a href="#pic348">7</a></li>
+							<li><a href="#pic349">8</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user49.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">北京超超超全旅游攻略 </br></br>
+
+								又到了快高考完事 中考完事 暑假开始的季节了 旅行的季节快来了 自己是一个超级喜欢去旅行的人 个人觉得多出
+								去走走 眼界和知识都会放宽 最重要的是放松心情 好啦好啦 废话不多说 进入正题</br></br>
+
+								我在北京实习半年 不是特意去旅行 所以我的行程比较随意 就是订好了地点说
+								走就走 比较随意的游玩 这里我会向大家安利我去过的所有地方 给大家一个参考 </br></br>
+
+								出行准备</br>
+								身份证 （这个到哪都可以忘！但是！北京不行 作为首都的北京 你要做好逛街、走
+								夜路、乘地铁都被查身份证的准备！一点也不夸张）</br>
+								学生证（不要小看这个！有的时候可能比美团还会便宜，珍惜拥有学生证的时候吧） 特写：这里的学生
+								证指的是大学生学生证！景区优惠可以看身高买儿童票！凭高考准考证也可以买到优惠票哦！</br>
+								一卡通 地铁卡（ 这里注意：如果有人在外面给你推荐买地铁卡的千万不
+								要相信，也不要理他，这个是每个地铁站 都会有卖的，卡的押金是20rmb，到时候退卡的时候
+								也会返给你，记住不要丢了就行。限一人一张哦</br>
+								百度地图（我一般出行都会用这个，因为北京的地铁 线路实在是太多了，为了防止做错坐反，不知道路线
+								的种种尴尬情况 ，最好出行前下载一个 </br>
+								至于天气 三四月份如果去的话最好带一件长袖 因为早晚温差会大一些 但是穿漂亮衣服的同时 防晒一定要做好 </br>
+								住宿方面：个人觉得选在离地铁 近一点的就可以 毕竟北京的地铁线路是超级的方便 关于下面
+								的广告 请宝贝们谨慎 北京住宿有很多是地下室的 一定要区分好是商家还是旅游宝宝 千万不要被
+								骗了 我已经尽力维持了 一定要上网搜一下图片以及评价 毕竟出去玩 住宿的地方一定要选择舒适一点的</br></br>
+								下面进入正题 </br>
+
+								古景篇 天安门 东交民巷 故宫 景山公园</br>
+								天安门怎么说，到北京必然会打卡的一个景点吧。这里就不多说啦，马路是不让过的，下公交或者地铁之后，走地下通道
+								就可以（ 告诉你们我第一次去的时候居然不知道咋过去，我是第二次朋友带我去的时候带我过去的）</br>
+								重点来喽，这个可不被常提起，这个地点是在一个小姐姐的笔记 看到的，在广场左边 一直走街边就是，我是跟着百度地
+								图找到的。里面都是之前留下的建筑，比较欧式复古，现在里面大部分都是军事基地，门口全是兵哥哥
+								把守 上次走累了结果在旁边休息 下 出来个兵哥哥和我们说此处不让逗留 满脸尴尬 里面还有个教堂，但是我那天
+								没有到开放日期 所以没有进去，但是里面有很多地点拍照 起来着急超级好看！可以去试试哦。故宫，看宫廷戏的都熟
+								悉吧，这里就不多说了。</br>
+								推荐 推荐 五星推荐 </br>
+								景山公园 第一次去是自己去的，拿学生证门票 一元！你没有听错，进去之后会爬一段小山坡，等你上去之后，就会领略紫
+								禁城的魅力，全在眼里，可以俯瞰整个故宫的景色，尽收眼底 超级好看 </br></br>
+
+								逛街篇 王府井步行街 西单商场 朝阳区大悦城 双井富力城 蓝色港湾</br>
+								个人不太喜欢，被人看出来就是过来旅游的，我认为 既然喜欢一个城市去并到这个城市旅行 逛景点的同时也应该
+								感受一下 这个城市最繁华的地带 建议大家在旅行的闲暇之余可以逛逛街 而且我认为商场的美食是最接地气的 不会像景区
+								那么不仅贵，还不太好吃......个人觉得这是最能感受这个城市风土人情的地方，也是最能够融入到这片城市当中
+								的旅行方式。</br>
+								想重点推一下双井富力城和朝阳区大悦城</br>
+								像这种王府井西单，这种著名的商业街，我就不再向大家多说了，想向大家介绍一些小众网红地点 双井富力城 当你
+								站在双井桥上往前看 你可以俯望整个国贸的景象 尤其到晚上的时候真的是超级美真的是超级美 </br>
+								朝阳区大悦城给我留下最深的印象就是那里面的美食 （原谅我是个吃货）真的是超级超级多 各种网红种草店都在
+								里面。如果你是一个爱吃美食的人一定不要错过。而且里面衣服的品牌也超级多，不会像西单，王府井有点奢
+								侈风的感觉，很符合一些小众品牌，如果有时间的话大家可以去看看。</br>
+								蓝色港湾里面的外国人超级多，景色比较美的一种商业街。喜欢阿迪那个店的牌匾，里面超级适 拍照 晚上的时候
+								还会有喷泉</br></br>
+
+								公园篇 龙潭湖公园 天坛公园 </br>
+								这点跟大家说一下：北京的公园都需要收费的，需要零钱。如果想去的话，记得需要随身带点现金。</br>
+								龙潭湖公园就在我实习的附近，个人对公园无感。过年的时候这里会有庙会，旁边是护城河。去过几次，门票 2rmb。里面景色很棒，如果
+								在游玩的附近可以去看。</br>
+								天坛公园应该是必打卡的一个景点，建议早点去，人会少点，如果想跟也来个正面的合照的话 </br></br>
+
+								艺术篇 798艺术区 红砖美术馆</br>
+								798艺术区 一个超级有艺术气息的地方，是每一个地方都能拍出网红大片的感觉。（不建议打车 很远，坐公交
+								就可以很方便）里面有很多很多的美术馆以及一些画家。外国人也超级多 里面大部分都是一些涂鸦墙美术馆供人欣
+								赏，还有有一家超级好看的吉他店，摆放着各种颜色的吉他，但是可惜不让拍照 如果看见的话可以进去逛一下。</br>
+								红砖美术馆，开放时间是周二到周日10:00-17:00，周一闭馆 要去的记得不要扑个空 有学生证的记
+								着带 半价哦 里面也是那种随便一拍就会非常好看 </br></br>
+
+								夜景篇 国贸 世贸天阶 侨福芳草地 北京欢乐谷 三里屯太古里 石景山游乐园</br>
+								前三个景点都挨在一起，可以晚上的 时候一起去看。世贸天街上面有一个长长的幕。里面会有各种情侣秀恩爱的照片，也是
+								一堆外国友人聚集的地方。侨福芳草地就在世贸天街的前面，一个很有特色的建筑风格，商场透露着浓浓奢华风，里
+								面很棒，建议去感受一下。</br>
+								三里屯太古里大家都知道，建议去酒吧的话往旁边走走，里面也 很多小清吧。环境也会棒，价格也不会贵的离谱。</br>
+								想去欢乐谷的话不建议节假日和旅游高峰的时候去，人超级多会一直在排队。我去的那天就没有很多人，只是赶上了小学春游 去的话可以不用屯粮，里面的肯德基不是很贵，玩累了就当休息去吃就可以（记得带学生证）
+								石景山游乐园有点远也有点偏，虽然里面到晚上很好看，但是如果是人少女孩的话不建议去</br></br>
+
+								健身篇 八达岭长城 慕田峪长城</br>
+								有句老话，不到长城非好汉。建议大家可以去慕田峪长城，它不会向八达岭的人特别多。个人觉得都差不多，如果不
+								想人多，太挤的话可以去慕田峪长城。</br></br>
+
+								北京篇 恭王府 前门大街 大栅栏 簋街</br>
+								这些都很有老北京的气息，推荐美食 宇治抹茶 coco奶茶 冰糖葫芦 里面 德云社、杜莎夫人蜡像馆都在里面 想去的话
+								记得去前门哦。 去簋街一定要吃小龙虾 其实我觉得小龙虾都差不多 选干净卫生的就行-，老字号的虽然好吃，但是
+								队的人有点太多......</br></br>
+
+								海淀篇 清华大学 北京大学 圆明园 颐和园 食宝街 国家图书馆 香山公园 中央电视塔</br>
+								有学府情怀的可以去，但是人不是一般的多，做好心理准备。去圆明园和颐和园的可以先不用买票，记得去圆明园的时候携程在做活动，用学生证5元就可以进去，超级合适。里面还有扫码可以免费坐车 记得多留意一下
+								特写 原谅我又在说吃 食宝街 不去的话你会超级后悔 里面简直是吃界人士的天堂 不信你去看看 每种小店都有自己的装饰风格 里面的四环冷面王、猪蹄......去吃吧
+								香山10号线坐到终点 快入秋的时候可以去看 中央电视塔在晚上的时候可以去拍照 觉得没有上去的必要 顶层有自助餐厅。</br></br>
+
+								欣赏篇 潘家园古玩市场 磁器口 明长城遗址</br>
+								如果带老人去旅行的话可以去看看，有点偏古风的感觉。磁器口属于逛街的地方，新世界在那里 里面当然也
+								是吃 明长城遗址跟长城差不多，我是 城墙啦</br></br>
+
+								古风篇 南锣鼓巷 烟袋斜街 后海酒吧一条街</br>
+								这几个地点都是在一起的，顺着走就可以走到后海，逛南锣鼓巷可以吃一道不用停 去后海酒吧听听音乐 很放松</br></br>
+
+								体坛篇 鸟巢 水立方 奥林匹克公园</br>
+								七八月份的时候一定要去奥林匹克森林公园，里面全是向日葵 超美</br>
+								同样希望可以帮到你们
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user14.jpg" /></a>
+										<p class="story_t">李小圆</p>
+										<p class="story_time">今天01:12</p>
+										<p class="story_m">水立方是真的好看！！！强推晚上去看灯光</p>
+									</div>
+									<p class="story_hf">@Y-ing:嗯嗯嗯嗯，超赞的，鸟巢也很好看，晚上有时候好像还有节目（不知道是我听错了吗）</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<a href="javascript:;">
+					<div class="listbox">
+						<div class="listpic">
+							<img src="images/31.jpg" id="pic350" width="300px" height="200px" />
+							<img src="images/32.jpg" id="pic351" width="300px" height="200px" />
+							<img src="images/33.jpg" id="pic352" width="300px" height="200px" />
+							<img src="images/34.jpg" id="pic353" width="300px" height="200px" />
+							<img src="images/35.jpg" id="pic354" width="300px" height="200px" />
+						</div>
+						<ul>
+							<li><a href="#pic350">1</a></li>
+							<li><a href="#pic351">2</a></li>
+							<li><a href="#pic352">3</a></li>
+							<li><a href="#pic353">4</a></li>
+							<li><a href="#pic354">5</a></li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li class="list-group-item">
+				<p class="like">&#10084;</p>
+			</li>
+			<li class="list-group-item">
+				<div class="media">
+					<div class="media-left">
+						<a href="javascript:;">
+							<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user50.jpg" />
+						</a>
+					</div>
+					<div class="media-body">
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<div id="pretime">干货满满的北京常规游+深度游攻略</br>
+								游览时间大约五天，行程时间只是大概。</br>
+								Day1：天安门-故宫-景山公园</br>
+								细节补充：</br>
+								1.故宫的票：【提前一天】官网（ http://gugong.228.com.cn/）预定或者微信（公众号名字是故宫博
+								物院票务服务），【刷身份证入场】，购买学生票需出示学生证。记得购买珍宝馆和钟表馆门票！！！毕竟是故宫博物
+								院，除了建筑故宫藏品更是一大亮点 </br>
+								2.7:30到达天安门东，B口出。出地铁口进天安门广场是有安检的，晚点到就是曲曲折折的排队长龙，因此
+								要去故宫【宜早不宜晚】。</br>
+								3.【8:00故宫开门】：之前搜攻略，都说故宫八点半开门，去到那里一问才知道旺季都是八点开门的，庆幸自己来
+								早了 。想要完完整整浏览故宫，一定要提早到！提早到！提早到！</br>
+								4.故宫开门后，只要不是想800米冲刺拍下清晨空无一人的故宫，那么别急着跟着大波游客拼命过了午门往中轴线冲。过
+								了检票口，先到午门前的服务窗口【租借语音器】，语音器到故宫景点会自动讲解。</br>
+								【故宫游览线路】（对比语音器背面地图）：穿过午门，看午门展览（我
+								们去的时候并没有开放 ）-往东走东华门—陶瓷馆一带（一大早基本没人）—返回至中
+								轴线往北走，参观箭亭（箭亭不是亭子，是一座宫殿）—进入珍宝馆（参观九龙壁，走东侧珍宝馆、石鼓馆，再西侧珍宝
+								馆）—出珍宝馆，前往钟表馆（去的时候大概十点，刚好留在那里等十一点的钟表展，一定要早点到那个展点！！！提前
+								十分钟到你只能看到济济的人头了 ）—出钟表馆，参观东六宫和右侧养性殿、颐和轩、珍妃井（东六宫和养性殿有一部分
+								可能不开放，看运气）—休息，吃午餐（可以自带干粮，也可以在故宫内的小店买汉堡）—穿过御花园到达西六宫（对的直接穿
+								过御花园，大中午人太多PS.同理西六宫开放多少看运气 ）—往南走去慈宁宫（去的时候有崇庆皇太后的展）、后花园
+								、书画中心（去的时候书画中心木有开放）—休息一下，开始中轴线宫殿（三大殿+俩后宫+御花园）参观，然后再出北门
+								前还语音器。</br>
+								注意：故宫一般4点后明显人少，毕竟4点故宫要开始清人了，如果想要吃四季民福的烤鸭建议早点出门排队，如果想
+								要拍没啥旅客的故宫或者为了方便后期P图，那么建议待到4点后开始中轴线，早上可以稍微晚点进故宫按上述线
+								路参观（钟表馆的表演有上午11点和下午2点两场）。我们大概3点开始参观中轴线，中间还休息了大半小时（然鹅3点的中
+								轴线人还是贼多hhhh）。</br>
+								5.出了北门就能见到景山公园。一定要向左走走地下通道去对面！！！马路木有斑马线也不能直接横穿的！</br>
+								6.买票进入景山公园，爬山上亭子拍故宫全景。山不高也挺好爬的（带着老人家出行的肯定care这一点 ），就是大家都想
+								拍夕阳下的故宫傍晚人会贼多。</br>
+								7.出景山，导航前往四季民福故宫店。其实这里提醒一下，如果真想就近吃烤鸭一定要【早点去四季民福排队】啊喂！我们五
+								点多去那里取号快九点才坐下的好不好！四季民福价格比较合理（好像价格统一不会因为在景点旁边而变贵），运气好还能坐
+								在护城河边一边吃饭一边看对面夜幕下的宫墙hhh（对的我们就是这样 ）。一只烤鸭大概200软妹币，吃的时候要自己卷；鸭
+								架骨可以加钱熬汤；贝勒烤肉很推荐；如果想开胃不太推荐点酸梅汤，emmm他们家的酸梅汤感觉忒不像广东的酸梅汤一样酸
+								酸甜甜，反正是一股甘草药的味道（对的喝到的时候我们后悔了除了饱腹没啥作用 ）</br>
+								PS.据在广州吃过烤鸭的小伙伴说，除了几个酱料好像也没差到哪…</br>
+								8.6点看【天安门降旗】。emmm其实是有自知之明起不来看升旗 （听朋友介绍过，看升旗一定要凌晨三四点到，
+								臣妾我是做不到的），但是降旗可以有！具体降旗时间上百度搜，和看升旗时间是一样一样的。看降旗的话相对人会少
+								点点，但也要提前到广场。为啥？降旗时会提前封闭地下通道出入口只能傻傻隔着街看乌压压的人头我会说嘛？</br>
+								Day2：八达岭长城+圆明园</br>
+								细节补充</br>
+								1.交通：去八达岭长城宜早不宜晚啊啊啊！有条件建议前一晚直接住八达岭附近，第二天大清早的去各种长城摆拍+登长
+								城！像我们这种住市区的【最晚最晚8点左右到霍营】！ 8点后你只会因为上班高峰期在地铁排长龙！S2线不是公交车长得跟
+								和谐号差不多！提前看好班次！等车时尽量找后面的车厢等！（下长城整个人是废人的时候一个小时S2回市区没座位只能苦
+								逼地坐地上了 ）有一节专门卖饮料矿泉水的车厢，建议买价格挺合理的，到八达岭后水的价格会让你哭唧唧。</br>
+								2.关于长城：</br>
+								上长城一定要【自带干粮】！可以在上长城前公共洗手间对面的包子铺买包子，价格算是合理的。旺季去八达岭除非6点开始爬长城，否则北一到北八绝对是人从众 所以做好心理准备。
+								长城主要是陡，没台阶，有条件的话【登山杖】是个好伴侣。一般上长城后直接从北一爬到北八，北八前面就是好汉坡所以都是人头没啥好奇怪的。
+								划重点——到北八之后不要傻傻一路返回！！！走下长城通道，不用走很远，会有一条小道【去北九和北十二】！！！这一截人很少人很少人很少！！！（大家没注意或者旅游团不带就不走后半截）想要拍好汉（划掉）没有济济人头的靓照吗？想要模拟纪录片拍蜿蜒长城吗？北九到北十二是个好地方！！！就是有几截长城陡度有点高，不扶栏杆往下走好怕自己直接滚下去哈（所以带着老人家的一定要量力而行，年轻人就无所谓啦，不过爬完全程还是会觉得膝盖受不了）。
+								夏天的长城上风很大（尤其当时北九到北十二没人，站在城墙上风吹过来真的有一种人要吹走的错觉
+								），就算太阳当空照连续不断的山风还是容易着凉，上长城建议穿薄一点的【长袖长裤】免得着凉，防晒又保暖！冬天登长城的亲也要查好温度，做好保暖准备！
+								慕田峪长城北京游得另外一个选择，缺点大概是交通不是很方便，有条件可以租车自驾游一天（旅行规划可以是长城+十三陵
+								），或者直接携程等平台报团参加。同个时期去的朋友上携程订的跟团旅行，情况反映是【慕田峪长城人不多 】，不喜欢
+								人从众......</br>
+								3.圆明园：圆明园当时是作为备用选项，我们想法是下了长城有时间就过去（不过照我们这行程还真有时间哈 ）。很多旅游
+								团常规规划是长城+十三陵的搭配，但是我和小伙伴们都木有车，所以就直接S2回市区搭地铁去圆明园。圆明园超级大超级大
+								超级大！！！爬完长城千万别尝试走完圆明园一圈，脚会废掉的（对我们傻傻这么做了而且我鞋还磨脚简直痛不欲生 ）
+								。主要看【西洋楼的遗址还有黄花阵】，想听正史野史可以在圆明园服务窗口雇佣导游（价格每人几十）。</br>
+								4.圆明园出来去五道口的行程是临时决定的，骑小黄车大概半个小时到（拖家带口建议滴滴）。毕竟圆明园那一带比较
+								偏，五道口算是离它较近的商圈了，找吃的方便。
+							</div>
+						</details>
+					</div>
+
+					<p class="ylcon">
+
+						<p class="tit">
+
+							所有留言
+
+						</p>
+						<h5 class="media-heading"></h5>
+						<details>
+							<summary>点击展开或收起</summary>
+							<p id="messpId">
+								<p class="story">
+
+									<p class="opbtn"></p>
+									<div class="media-left">
+										<a href="javascript:;">
+											<img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/user42.jpg" /></a>
+										<p class="story_t">你算那块小饼干</p>
+										<p class="story_time">2012/05/03 13:48</p>
+										<p class="story_m">是不是现存古物已经太少了的问题呢？我没发现有啥太值得去玩的</p>
+									</div>
+									<p class="story_hf">@a金刚:我觉得圆明园还好吧，不过植物太少，好晒啊</p>
+								</p>
+							</p>
+					</p>
+					<div class="info-attribute" id="collect">
+
+						<input value="${userId}" type="hidden" class="userId"> <input value="${orderId}" type="hidden" class="orderId">
+						<input value="${type}" type="hidden" class="type">
+					</div>
+				</div>
+				</div>
+			</li>
+		</ul>
+		<script>
+			String.prototype.Trim = function() { //去空格
+				return this.replace(/\s/gi, "")
+			}
+
+			function searchTarget(searchtext) { //查找处理
+				var reg = new RegExp(searchtext, "g");
+				var objtext = document.getElementById("pretime").innerHTML;
+				var sCurText;
+				if (!reg.test(objtext)) { //没找到
+					alert(" can not find!");
+					return;
+				} else { //找到
+					var prehtml = document.getElementById("pretime").innerHTML; //获取目标文本容器的HTML字符串
+					var newinner = prehtml.replace(reg, '<span class="highlight">' + searchtext + '</span>') //处理HTML字符串，为目标文本加上样式，即替换对应的HTML结构
+					document.getElementById("pretime").innerHTML = newinner; //把处理后的HTML字符串写回到容器中
+				}
+			}
+			window.onload = function() {
+				document.getElementById("searchbtn").onclick = function() {
+					var searchtext = document.getElementById("search").value.Trim();
+					searchTarget(searchtext);
+				}
+			}
+		</script>
+		</ul>
+		</script>
+		<div class="hovertreebottom">
+					<nav>
+						<div id="hovertreebottom_ul">
+							<ul class="box">
+								<li>
+									<a href="我的订单 .html" class=""><span>订单</span></a>
+								</li>
+								<li>
+									<a href="shouye.html" class=""><span>首页</span></a>
+								</li>
+								<li>
+									<a href="我的.html" class=""><span>我的</span></a>
+								</li>
+				
+							</ul>
+						</div>
+					</nav>
+				
+				</div>
+			
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+		<script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+		<script src="js/bootstrap-waterfall.js"></script>
+	</body>
+</html>

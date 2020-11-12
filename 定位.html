@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<title>app首页 </title>
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wqBXfIN3HkpM1AHKWujjCdsi"></script>
+		<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+		<style type="text/css">
+			/* *{ margin: -20px; padding: 0px;} */
+			body {
+				text-align: center;
+				height: 100%;
+				overflow: hidden;
+			}
+
+			#allmap {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		</style>
+		<style>
+			* {
+				margin: 0px;
+				padding: -10px;
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+
+			.nav .item {
+				height: 40px;
+				display: flex;
+				background-color: lightseagreen;
+				/* margin: 10px; */
+				border-radius: 15px;
+			}
+
+			.item .pub {
+				flex: 1;
+				border-right: 1px solid #fff;
+				/*border-bottom: 1px solid #fff;*/
+			}
+
+			.item .sub {
+				flex: 100%;
+			}
+
+			.item .sub a {
+				width: 50%;
+				float: left;
+				text-align: center;
+				line-height: 45px;
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				/*盒子内减*/
+				box-sizing: border-box;
+			}
+
+			.nav .item:nth-child(4) .sub a {
+				width: 33.333%;
+			}
+		</style>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 微软雅黑;
+				background: rgb(240, 240, 240);
+				font-family: .PingFangSC-Regular;
+			}
+
+			header {
+				/* height: 60px; */
+				/* line-height: 60px; */
+				width: 100%;
+				color: #fff;
+				font-family: 黑体;
+				font-weight: 200;
+				/* font-size: 20px; */
+				margin-left: 20px;
+				/* margin-top: 10px; */
+				/* 背景色渐变 */
+				background: linear-gradient(to bottom right, #F56739, #FB9749);
+			}
+		</style>
+		<script src="js/jquery-1.11.2.min.js"></script>
+
+		<style type="text/css">
+			html {
+				font-size: 100px;
+			}
+
+			.head {
+				font-size: 20px;
+				height: 0.44rem;
+				background: #26A69A;
+				color: white;
+				text-align: center;
+				line-height: 0.44rem;
+			}
+
+			.head>a {
+				color: white;
+				float: left;
+				margin-left: 0.12rem;
+			}
+		</style>
+		<script>
+			$(function () {            
+		        $(".like").click(function () {
+		            $(this).toggleClass('cs');                
+		        })
+		    })
+		</script>
+		<style>
+			* {
+				font-size: 16px;
+			}
+		</style>
+		<style type="text/css">
+			.listbox {
+				width: 300px;
+				height: 200px;
+				border: 1px solid black;
+				position: relative;
+				/* font-size: 16px; */
+			}
+
+			.listbox ul li {
+				width: 30px;
+				height: 30px;
+				background: rgba(0, 0, 0, 0.5);
+				float: left;
+				list-style: none;
+				text-align: center;
+				line-height: 30px;
+				color: #fff;
+				margin: 0 2px;
+				font-size: 16px;
+			}
+
+			.listbox ul li a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			.listbox ul {
+				position: absolute;
+				right: 20px;
+				bottom: 10px;
+				font-size: 16px;
+			}
+
+			.listbox ul li:hover {
+				background: rgba(0, 0, 0, 0.8);
+				font-size: 16px;
+			}
+
+			.listbox.listpic {
+				overflow: hidden;
+				width: 300px;
+				height: 200px;
+				font-size: 16px;
+			}
+
+			#box {
+				/* width: 380px; */
+				margin: 30px auto;
+				font-family: 'Microsoft YaHei';
+				font-size: 14px;
+			}
+
+			input {
+				width: 250px;
+				border: 1px solid #e2e2e2;
+				height: 30px;
+				float: left;
+				padding: 0 0 0 40px;
+				margin-left: 15px;
+				margin-top: -30px;
+			}
+
+			#search {
+				width: 86px;
+				height: 30px;
+				float: right;
+				/* background: #000000; */
+				color: white;
+				text-align: center;
+				line-height: 32px;
+				cursor: pointer;
+				margin-top: -30px;
+				margin-right: 28px;
+			}
+
+			.allmap {
+				margin-top: -20px;
+			}
+		</style>
+		<script>
+			function jump(){
+	        window.location.href="audio-bj.html";
+	    }
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<div class="head" style="width: 100%;">
+				<a href="首页.html">
+					< <div id="daohang" style="width: 100%; font-size: 19px;">
+				</a> 定位
+			</div>
+		</div>
+		<div id="box">
+			<input type="text" name="search" placeholder="请输入景点城市" />
+			<input  id="search" type="button" value="搜索" onclick=javascrtpt:jump() style="text-align: left;" >
+
+		</div>
+		</div>
+		<div class="hovertreebottom">
+			<nav>
+				<div id="hovertreebottom_ul">
+					<ul class="box">
+						<li>
+							<a href="我的订单 .html" class=""><span>订单</span></a>
+						</li>
+						<li>
+							<a href="shouye.html" class=""><span>首页</span></a>
+						</li>
+						<li>
+							<a href="我的.html" class=""><span>我的</span></a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+
+		</div>
+
+		<div id="allmap"></div>
+		<script type="text/javascript">
+			$(function() {
+				if (supportsGeoLocation()) {
+					alert("你的浏览器支持 GeoLocation.");
+				} else {
+					alert("不支持 GeoLocation.")
+				}
+				// 检测浏览器是否支持HTML5
+				function supportsGeoLocation() {
+					return !!navigator.geolocation;
+				}
+				// 单次位置请求执行的函数             
+				function getLocation() {
+					navigator.geolocation.getCurrentPosition(mapIt, locationError);
+				}
+				//定位成功时，执行的函数
+				function mapIt(position) {
+					var lon = position.coords.longitude;
+					var lat = position.coords.latitude;
+					// alert("您位置的经度是："+lon+" 纬度是："+lat);
+					var map = new BMap.Map("allmap");
+					var point = new BMap.Point("" + lon + "", "" + lat + "");
+					map.centerAndZoom(point, 19);
+					var gc = new BMap.Geocoder();
+					translateCallback = function(point) {
+						var marker = new BMap.Marker(point);
+						map.addOverlay(marker);
+						map.setCenter(point);
+						gc.getLocation(point, function(rs) {
+							var addComp = rs.addressComponents;
+							if (addComp.province !== addComp.city) {
+								var sContent =
+									"<div><h4 style='margin:0 0 5px 0;padding:0.2em 0'>你当前的位置是：</h4>" +
+									"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + addComp.province + ", " + addComp
+									.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber + "</p>" +
+									"</div>";
+							} else {
+								var sContent =
+									"<div><h4 style='margin:0 0 5px 0;padding:0.2em 0'>你当前的位置是：</h4>" +
+									"<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + addComp.city + ", " + addComp.district +
+									", " + addComp.street + ", " + addComp.streetNumber + "</p>" +
+									"</div>";
+							}
+							var infoWindow = new BMap.InfoWindow(sContent);
+							map.openInfoWindow(infoWindow, point);
+						});
+					}
+					//gpsPoint：转换前坐标，第二个参数为转换方法，0表示gps坐标转换成百度坐标，callback回调函数，参数为新坐标点                  
+					BMap.Convertor.translate(point, 0, translateCallback);
+				}
+				// 定位失败时，执行的函数
+				function locationError(error) {
+					switch (error.code) {
+						case error.PERMISSION_DENIED:
+							alert("User denied the request for Geolocation.");
+							break;
+						case error.POSITION_UNAVAILABLE:
+							alert("Location information is unavailable.");
+							break;
+						case error.TIMEOUT:
+							alert("The request to get user location timed out.");
+							break;
+						case error.UNKNOWN_ERROR:
+							alert("An unknown error occurred.");
+							break;
+					}
+				}
+				// 页面加载时执行getLocation函数
+				window.onload = getLocation;
+			})
+		</script>
+		<style type="text/css">
+			.allmap {
+				margin-top: 50px;
+			}
+		</style>
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+		<script>
+			document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+		</script>
+		<script src="js/bootstrap-waterfall.js"></script>
+<div class="hovertreebottom">
+			<nav>
+				<div id="hovertreebottom_ul">
+					<ul class="box">
+						<li>
+							<a href="我的订单 .html" class=""><span>订单</span></a>
+						</li>
+						<li>
+							<a href="shouye.html" class=""><span>首页</span></a>
+						</li>
+						<li>
+							<a href="我的.html" class=""><span>我的</span></a>
+						</li>
+		
+					</ul>
+				</div>
+			</nav>
+		
+		</div>
+	
+   <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+   <script> document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+   <script src="js/bootstrap-waterfall.js"></script>
+   
+
+	</body>
+</html>

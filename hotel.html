@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="http://hovertree.com/texiao/mobile/5/hovertreebottom.css" media="all">
+		<title>app首页 </title>
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 微软雅黑;
+			}
+
+			header {
+				height: 60px;
+				line-height: 60px;
+				width: 100%;
+				color: #fff;
+				font-family: 黑体;
+				font-weight: 200;
+				/* font-size: 20px; */
+				margin-left: 20px;
+				/* 背景色渐变 */
+				background: linear-gradient(to bottom right, #F56739, #FB9749);
+			}
+
+	/* 		#content {
+				background: linear-gradient(to bottom right, #f5f454, #fbd1b7);
+			}
+
+			.menu {
+				display: block;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				height: 70px;
+				color: #474747;
+				padding-top: 10px;
+				border-top: 1px solid #eee;
+				background-color: #fff;
+				margin-left: 20px;
+			} */
+/* 
+			.subMenu {
+				width: 33%;
+				float: left;
+				cursor: pointer;
+			}
+
+			.menu_name {
+				height: 30px;
+				width: 100%;
+				line-height: 30px;
+			} */
+
+			img.menu_img {
+				height: 24px;
+				width: 24px;
+			}
+
+			img {
+				vertical-align: middle;
+				border: 0;
+			}
+
+		/* 	.active {
+				color: #FFA129;
+			}
+
+			.text-center {
+				text-align: center
+			} */
+		</style>
+		<script src="js/jquery-1.11.2.min.js"></script>
+
+		<style type="text/css">
+			html {
+				font-size: 100px;
+			}
+
+			body,
+			a,
+			ul,
+			li {
+				padding: 10;
+				margin: 10;
+				list-style: none;
+				text-decoration: none;
+			}
+
+			body {
+				background: rgb(240, 240, 240);
+				font-family: .PingFangSC-Regular;
+			}
+
+			div {
+				box-sizing: border-box;
+			}
+
+			.head {
+				font-size: 19px;
+				height: 0.44rem;
+				background: #26A69A;
+				color: white;
+				text-align: center;
+				line-height: 0.44rem;
+			}
+
+			.head>a {
+				color: white;
+				float: left;
+				margin-left: 0.12rem;
+			}
+
+
+			.cell1 {
+				height: 160px;
+				background: white;
+				font-size: 0.12rem;
+				margin-top: 17px;
+			}
+
+			.title {
+				height: 20px;
+				border-bottom: 1px solid #D8D8D8;
+				padding-left: 0.12rem;
+				padding-right: 0.12rem;
+				margin-top: 5px;
+			}
+
+			.title>span {
+				float: right;
+				font-size: 10px;
+				color: #A4A3A3;
+				margin-top: 3px;
+			}
+
+			.cell {
+				height: 140px;
+				background: white;
+				border-bottom: 1px solid #D8D8D8;
+				padding: 0.12rem 0;
+			}
+
+			.cell>.img {
+				width: 1.27rem;
+				height: 0.72rem;
+				float: left;
+				margin-left: 0.12rem;
+
+			}
+
+			.cell>.text {
+				width: 2.12rem;
+				margin-right: 10px;
+				float: right
+			}
+
+			.cell>.text>span {
+				display: block;
+			}
+
+			.cell .intro {
+				font-size: 12px;
+				color: #000000;
+			}
+
+			.cell .spay {
+				font-size: 12px;
+				color: #08ACEE;
+			}
+
+			.cell .pay {
+				color: #FF0000;
+				font-size: 14px;
+			}
+
+			.footer {
+				height: 0.32rem;
+				padding: 0.1rem;
+				text-align: center;
+			}
+
+			.footer>.btn {
+				float: right;
+			}
+
+			.option {
+				width: 0.65rem;
+				border: 1px solid #26A69A;
+				border-radius: 2px;
+				float: left;
+				margin-left: 0.07rem;
+			}
+
+			.brand {
+				margin-top: 10px;
+				font-size: 16px;
+			}
+		</style>
+		</header>
+	<body>
+		<div class="header">
+			<div class="head" style="width: 100%;">
+				<a href="home.html">
+					< <div id="daohang" style="width: 100%;">
+				</a> 蚁游酒店
+			</div>
+		</div>
+
+		<div class="content" style="margin-top: 10px;"onclick="window.open('北京新国贸.html')">
+			<div class="cell1">
+				<div class="title">
+					北京新国贸饭店（朝阳区建国门外大街一号）
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">北京新国贸饭店（朝阳区建国门外大街一号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥1739.00起</b></span>
+						<span class="intro">房间数：450间</span>
+					</div>
+					<div class="img"><img src="images/121.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px;"onclick="window.open('飘HOME.html')">
+			<div class="cell1">
+				<div class="title">
+					飘HOME连锁酒店（北京王府井步行街店）
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">飘HOME连锁酒店（北京王府井步行街店）</div>
+						<span class="spay">评分4.3分</span>
+						<span class="pay"><b>￥528.00起</b></span>
+						<span class="intro">房间数：190间</span>
+					</div>
+					<div class="img"><img src="images/129.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px;"onclick="window.open('麗枫酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					麗枫酒店(北京南站木樨园店)（北京市丰台区东罗园9号）
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">麗枫酒店(北京南站木樨园店)（北京市丰台区东罗园9号）</div>
+						<span class="spay">评分4.8分</span>
+						<span class="pay"><b>￥466.00起</b></span>
+						<span class="intro">房间数：118间</span>
+					</div>
+					<div class="img"><img src="images/133.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px;"onclick="window.open('如家精选.html')">
+			<div class="cell1">
+				<div class="title">
+					如家精选酒店（北京市昌平区政府街2号-1新新公寓商业楼）
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">如家精选酒店（北京市昌平区政府街2号-1新新公寓商业楼）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥322.00起</b></span>
+						<span class="intro">房间数：130间</span>
+					</div>
+					<div class="img"><img src="images/139.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px;"onclick="window.open('锐思特.html')">
+			<div class="cell1">
+				<div class="title">
+					锐思特酒店（北京和平里店)（北京市东城区兴化路甲8号）
+				</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">锐思特酒店（北京和平里店)（北京市东城区兴化路甲8号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥509.00起</b></span>
+						<span class="intro">房间数：130间</span>
+					</div>
+					<div class="img"><img src="images/144.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('北京励骏.html')">
+			<div class="cell1">
+				<div class="title">
+					北京励骏酒店（北京市东城区金宝街90-92号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">北京励骏酒店（北京市东城区金宝街90-92号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥1345.00起</b></span>
+						<span class="intro">房间数：388间</span>
+					</div>
+					<div class="img"><img src="images/148.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('上海迪士尼.html')">
+			<div class="cell1">
+				<div class="title">
+					上海迪士尼乐园酒店（上海市浦东新区申迪西路1009号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">上海迪士尼乐园酒店（上海市浦东新区申迪西路1009号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥3648.00起</b></span>
+						<span class="intro">房间数：420间</span>
+					</div>
+					<div class="img"><img src="images/2上海/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('上海青春概念.html')">
+			<div class="cell1">
+				<div class="title">
+					上海青奢概念酒店（上海市静安区天目西路511号锦程大厦4楼） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">上海青奢概念酒店（上海市静安区天目西路511号锦程大厦4楼）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥265.00起</b></span>
+						<span class="intro">房间数：87间</span>
+					</div>
+					<div class="img"><img src="images/2上海/7.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('全季酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					全季酒店（上海外滩金陵东路店）（上海市黄浦区河南南路33号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">全季酒店（上海外滩金陵东路店）（上海市黄浦区河南南路33号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥422.00起</b></span>
+						<span class="intro">房间数：241间</span>
+					</div>
+					<div class="img"><img src="images/2上海/13.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('创业大酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					创业大酒店（上海外滩中心店）（上海市黄浦区四川中路33号创业大楼） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">创业大酒店（上海外滩中心店）（上海市黄浦区四川中路33号创业大楼）</div>
+						<span class="spay">评分4.6分</span>
+						<span class="pay"><b>￥163.00起</b></span>
+						<span class="intro">房间数：138间</span>
+					</div>
+					<div class="img"><img src="images/2上海/18.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('如家酒店（上海）.html')">
+			<div class="cell1">
+				<div class="title">
+					如家酒店（上海市浦东新区御青路315-317号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">如家酒店（上海市浦东新区御青路315-317号）</div>
+						<span class="spay">评分4.5分</span>
+						<span class="pay"><b>￥227.00起</b></span>
+						<span class="intro">房间数：109间</span>
+					</div>
+					<div class="img"><img src="images/2上海/23.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('斯铂瑞城市酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					斯铂瑞城市酒店（福建省厦门市思明区公园南路11号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">斯铂瑞城市酒店（福建省厦门市思明区公园南路11号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥422.00起</b></span>
+						<span class="intro">房间数：241间</span>
+					</div>
+					<div class="img"><img src="images/3厦门/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('厦门映雪.html')">
+			<div class="cell1">
+				<div class="title">
+					厦门映雪轻奢酒店（福建省厦门市思明区大同路280号思东商厦） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">厦门映雪轻奢酒店（福建省厦门市思明区大同路280号思东商厦）</div>
+						<span class="spay">评分5.0分</span>
+						<span class="pay"><b>￥254.00起</b></span>
+						<span class="intro">房间数：30间</span>
+					</div>
+					<div class="img"><img src="images/3厦门/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; " onclick="window.open('厦门佰翔五通.html')">
+			<div class="cell1">
+				<div class="title">
+					厦门佰翔五通酒店（福建省厦门市湖里区环岛东路2496号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">厦门佰翔五通酒店（福建省厦门市湖里区环岛东路2496号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥568.00起</b></span>
+						<span class="intro">房间数：620间</span>
+					</div>
+					<div class="img"><img src="images/3厦门/10.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('成都蓝城悦杏.html')">
+			<div class="cell1">
+				<div class="title">
+					成都蓝城悦杏温泉美食酒店（四川省成都市青羊区槐树街35号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">成都蓝城悦杏温泉美食酒店（四川省成都市青羊区槐树街35号）</div>
+						<span class="spay">评分5.0分</span>
+						<span class="pay"><b>￥596.00起</b></span>
+						<span class="intro">房间数：198间</span>
+					</div>
+					<div class="img"><img src="images/4成都/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('瑞熙酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					瑞熙酒店（四川省成都市成华区二环路东二段7号5楼） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">瑞熙酒店（四川省成都市成华区二环路东二段7号5楼）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥262.00起</b></span>
+						<span class="intro">房间数：167间</span>
+					</div>
+					<div class="img"><img src="images/4成都/7.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('哈斯顿精品.html')">
+			<div class="cell1">
+				<div class="title">
+					哈斯顿精品公寓（青羊区上升街41号富力天汇史丹尼国际公寓） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">哈斯顿精品公寓（青羊区上升街41号富力天汇史丹尼国际公寓）</div>
+						<span class="spay">评分4.8分</span>
+						<span class="pay"><b>￥231.00起</b></span>
+						<span class="intro">房间数：620间</span>
+					</div>
+					<div class="img"><img src="images/4成都/11.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('三亚哈曼.html')">
+			<div class="cell1">
+				<div class="title">
+					三亚哈曼度假酒店（海南省吉阳区大东海旅游度假区榆亚路136）</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">三亚哈曼度假酒店（海南省吉阳区大东海旅游度假区榆亚路136号</div>
+						<span class="spay">评分4.8分</span>
+						<span class="pay"><b>￥508.00起</b></span>
+						<span class="intro">房间数：490间</span>
+					</div>
+					<div class="img"><img src="images/5三亚/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('三亚蔚蓝海岸.html')">
+			<div class="cell1">
+				<div class="title">
+					三亚蔚蓝海岸海景公寓（三亚市吉阳区三亚大东海金陵海景花园） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">三亚蔚蓝海岸海景公寓（三亚市吉阳区三亚大东海金陵海景花园）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥568.00起</b></span>
+						<span class="intro">房间数：620间</span>
+					</div>
+					<div class="img"><img src="images/5三亚/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('三亚艾言.html')">
+			<div class="cell1">
+				<div class="title">
+					三亚艾言酒店（三亚市天涯区三亚湾路椰梦长廊段老机场路8号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">三亚艾言酒店（海南省三亚市天涯区三亚湾路椰梦长廊段老机场路8号）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥237.00起</b></span>
+						<span class="intro">房间数：105间</span>
+					</div>
+					<div class="img"><img src="images/5三亚/12.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('南京金鹰.html')">
+			<div class="cell1">
+				<div class="title">
+					南京金鹰国际酒店（南京秦淮区汉中路101号金鹰新街口店B座） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">南京金鹰国际酒店（南京秦淮区汉中路101号金鹰新街口店B座）</div>
+						<span class="spay">评分4.8分</span>
+						<span class="pay"><b>￥899.00起</b></span>
+						<span class="intro">房间数：300间</span>
+					</div>
+					<div class="img"><img src="images/6南京/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px;" onclick="window.open('南京龙荟.html')">
+			<div class="cell1">
+				<div class="title">
+					南京龙荟酒店（南京市雨花台区明城大道10号F栋大厅617） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">南京龙荟酒店（南京市雨花台区明城大道10号F栋大厅617） </div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥231.00起</b></span>
+						<span class="intro">房间数：60间</span>
+					</div>
+					<div class="img"><img src="images/6南京/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('南京1休.html')">
+			<div class="cell1">
+				<div class="title">
+					南京1休•好来屋精品酒店（江宁区禄口街道石埝社区张塘角7号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">南京1休•好来屋精品酒店（江宁区禄口街道石埝社区张塘角7号）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥130.00起</b></span>
+						<span class="intro">房间数：47间</span>
+					</div>
+					<div class="img"><img src="images/6南京/10.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('西双版纳湄公河.html')">
+			<div class="cell1">
+				<div class="title">
+					西双版纳湄公河景兰大酒店（西双版纳傣族自治州景洪市告庄西双景湄公河人家10栋）</div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">西双版纳湄公河景兰大酒店（西双版纳傣族自治州景洪市告庄西双景湄公河人家10栋）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥533.00起</b></span>
+						<span class="intro">房间数：309间</span>
+					</div>
+					<div class="img"><img src="images/7西双版纳/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('西双版纳绿孔雀.html')">
+			<div class="cell1">
+				<div class="title">
+					西双版纳绿孔雀主题客栈（西双版纳傣族自治州景洪市告庄西双景景法寨7栋110） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">西双版纳绿孔雀主题客栈（西双版纳傣族自治州景洪市告庄西双景景法寨7栋110）</div>
+						<span class="spay">评分5.0分</span>
+						<span class="pay"><b>￥236.00起</b></span>
+						<span class="intro">房间数：30间</span>
+					</div>
+					<div class="img"><img src="images/7西双版纳/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('東舍酒店.html')">
+			<div class="cell1">
+				<div class="title">
+					東舍酒店（西安钟古楼店）（西安市碑林区南大街粉巷西300米） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">東舍酒店（西安钟古楼店）（西安市碑林区南大街粉巷西300米）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥801.00起</b></span>
+						<span class="intro">房间数：154间</span>
+					</div>
+					<div class="img"><img src="images/8西安/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('H酒店 .html')">
+			<div class="cell1">
+				<div class="title">
+					H酒店（西安明城墙西门外精品店）（西安市莲湖区丰庆路39号御溪望城11号楼） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">H酒店（西安明城墙西门外精品店）（西安市莲湖区丰庆路39号御溪望城11号楼）</div>
+						<span class="spay">评分4.9分</span>
+						<span class="pay"><b>￥250.00起</b></span>
+						<span class="intro">房间数：112间</span>
+					</div>
+					<div class="img"><img src="images/8西安/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('青岛香格里拉.html')">
+			<div class="cell1">
+				<div class="title">
+					青岛香格里拉大酒店（山东省青岛市市南区香港中路9号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">青岛香格里拉大酒店（山东省青岛市市南区香港中路9号）</div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥1164.00起</b></span>
+						<span class="intro">房间数：701间</span>
+					</div>
+					<div class="img"><img src="images/9青岛/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('青岛艾客.html')">
+			<div class="cell1">
+				<div class="title">
+					青岛艾客海景度假公寓（石老人海水浴场店）（青岛市崂山区秦岭路19号WFC协信中心3号楼33层） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">青岛艾客海景度假公寓（青岛市崂山区秦岭路19号WFC协信中心3号楼33层）</div>
+						<span class="spay">评分4.8分</span>
+						<span class="pay"><b>￥826.00起</b></span>
+						<span class="intro">房间数：62间</span>
+					</div>
+					<div class="img"><img src="images/9青岛/7.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('杭州中维香溢.html')">
+			<div class="cell1">
+				<div class="title">
+					杭州中维香溢大酒店（浙江省杭州市上城区解放路108号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">杭州中维香溢大酒店（浙江省杭州市上城区解放路108号） </div>
+						<span class="spay">评分4.7分</span>
+						<span class="pay"><b>￥558.00起</b></span>
+						<span class="intro">房间数：328间</span>
+					</div>
+					<div class="img"><img src="images/10杭州/1.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="content" style="margin-top: -10px; "onclick="window.open('五洋公馆.html')">
+			<div class="cell1">
+				<div class="title">
+					五洋公馆（杭州西湖店）（浙江省杭州市上城区解放路199号） </div>
+				<div class="cell">
+					<div class="text">
+						<div class="brand">五洋公馆（杭州西湖店）（浙江省杭州市上城区解放路199号） </div>
+						<span class="spay">评分4.5分</span>
+						<span class="pay"><b>￥244.00起</b></span>
+						<span class="intro">房间数：101间</span>
+					</div>
+					<div class="img"><img src="images/10杭州/6.jpg" width="120px" height="110px" /></div>
+
+				</div>
+			</div>
+		</div>
+		</div>
+
+		</div>
+		<div class="content" style="margin-top: -10px; margin-bottom: 50px;">
+
+			<div class="hovertreebottom">
+				<nav>
+					<div id="hovertreebottom_ul">
+						<ul class="box">
+							<li>
+								<a href="我的订单 .html" class=""><span>订单</span></a>
+							</li>
+							<li>
+								<a href="shouye.html" class=""><span>首页</span></a>
+							</li>
+							<li>
+								<a href="我的.html" class=""><span>我的</span></a>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+	</body>
+</html>
